@@ -1,5 +1,14 @@
+<form id="converterForm">
+  <label for="kJ">Enter kJ:</label>
+  <input type="number" id="kJ" name="kJ" step="any" required><br>
+
+  <label for="cal">Enter cal:</label>
+  <input type="number" id="cal" name="cal" step="any" required><br>
+
+  <div id="result"></div>
+</form>
+
 <script>
-document.addEventListener('DOMContentLoaded', function () {
   function convert(source) {
     const kJInput = document.getElementById('kJ');
     const calInput = document.getElementById('cal');
@@ -24,17 +33,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  const kJInput = document.getElementById('kJ');
-  const calInput = document.getElementById('cal');
+  // Set up event listeners after the page has loaded
+  document.addEventListener('DOMContentLoaded', function () {
+    const kJInput = document.getElementById('kJ');
+    const calInput = document.getElementById('cal');
 
-  kJInput.addEventListener('input', function () {
-    convert('kJ');
+    kJInput.addEventListener('input', function () {
+      convert('kJ');
+    });
+
+    calInput.addEventListener('input', function () {
+      convert('cal');
+    });
   });
-
-  calInput.addEventListener('input', function () {
-    convert('cal');
-  });
-});
-
-
-  </script>
+</script>
