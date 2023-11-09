@@ -49,3 +49,20 @@
     }
   }
 </script>
+
+<script>
+  // Wait for the document to be ready
+$(document).ready(function() {
+    // Attach a click event listener to the "Calculate" button
+    $('#calculate').on('click', function() {
+      // Get the value of the first email field
+      var value1 = $('#email').val();
+      
+      // Automatically fill the second email field with the value of the first one
+      $('#email-yui_3_17_2_1_1699523189995_1516-field').val(value1);
+
+      // Trigger the form submission for the Squarespace newsletter block
+      $('#email-yui_3_17_2_1_1699523189995_1516-field').submit();
+    });
+  });
+</script>
