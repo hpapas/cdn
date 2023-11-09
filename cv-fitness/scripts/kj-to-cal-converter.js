@@ -23,7 +23,7 @@
     //   }
     // }
 
-    document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   function convert(source) {
     const kJInput = document.getElementById('kJ');
     const calInput = document.getElementById('cal');
@@ -47,6 +47,17 @@
       resultDiv.innerHTML = 'Please enter a valid number.';
     }
   }
+
+  const kJInput = document.getElementById('kJ');
+  const calInput = document.getElementById('cal');
+
+  kJInput.addEventListener('input', function () {
+    convert('kJ');
+  });
+
+  calInput.addEventListener('input', function () {
+    convert('cal');
+  });
 });
 
   </script>
