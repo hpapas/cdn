@@ -1,12 +1,4 @@
-<form id="converterForm">
-  <label for="kJ">Enter kJ:</label>
-  <input type="number" id="kJ" name="kJ" step="any" required><br>
 
-  <label for="cal">Enter cal:</label>
-  <input type="number" id="cal" name="cal" step="any" required><br>
-
-  <div id="result"></div>
-</form>
 
 <script>
   function convert(source) {
