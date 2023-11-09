@@ -1,4 +1,5 @@
 <script>
+    $( document ).ready(function() {
     function convert(source) {
       const kJInput = document.getElementById('kJ');
       const calInput = document.getElementById('cal');
@@ -22,4 +23,5 @@
         resultDiv.innerHTML = 'Please enter a valid number.';
       }
     }
+        });
   </script>
