@@ -1,6 +1,4 @@
 <script>
-
-
 document.addEventListener('DOMContentLoaded', function () {
   function convert(source) {
     const kJInput = document.getElementById('kJ');
