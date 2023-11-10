@@ -34,6 +34,7 @@
     letter-spacing: var(--form-block-select-dropdown-text-font-letter-spacing);
     text-transform: var(--form-block-select-dropdown-text-font-text-transform);
   padding: var(--form-field-padding-vertical) var(--form-field-padding-horizontal);
+  width: 108%;
 }
 
 #calorieForm label {
