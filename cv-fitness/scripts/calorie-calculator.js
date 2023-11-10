@@ -1,4 +1,5 @@
 // Function to update units in the form
+
 function updateUnits(selectedUnit) {
     var weightUnit = $('#weightUnit');
     var heightUnit = $('#heightUnit');
@@ -16,6 +17,7 @@ function updateUnits(selectedUnit) {
 }
 
 // Function to reset the form
+
 function resetForm() {
     // Reset values in the form to their default or empty values
     $('#age').val('');
@@ -27,6 +29,7 @@ function resetForm() {
 }
 
 // Function to calculate daily estimated calories
+
 function calculateCalories() {
     // Get values from the form
     var age = parseInt($('#age').val());
@@ -56,6 +59,7 @@ function calculateCalories() {
 }
 
 // Function to calculate BMR using Harris-Benedict Formula
+
 function calculateDailyCalories(age, weight, height, activityLevel, goal) {
     // Perform Harris-Benedict Formula calculation
     var baseCalories = 10 * weight + 6.25 * height - 5 * age;
@@ -73,13 +77,14 @@ function calculateDailyCalories(age, weight, height, activityLevel, goal) {
         case 'gain':
             calculatedCalories += 300; // Adjust for weight gain (example value)
             break;
-        // Add more cases for other goals if needed
+            // Add more cases for other goals if needed
     }
 
     return calculatedCalories;
 }
 
 // Function to get the activity level multiplier
+
 function getActivityMultiplier(activityLevel) {
     // Replace with your actual logic to determine the activity multiplier
     switch (activityLevel) {
@@ -99,9 +104,9 @@ function getActivityMultiplier(activityLevel) {
 }
 
 // Wait for the document to be ready
-$(document).ready(function () {
+$(document).ready(function() {
     // Attach a change event listener to the "units" radio buttons
-    $('input[name="units"]').on('change', function () {
+    $('input[name="units"]').on('change', function() {
         // Get the selected unit value
         var selectedUnit = $(this).val();
 
@@ -110,20 +115,20 @@ $(document).ready(function () {
     });
 
     // Attach a change event listener to the "gender" dropdown
-    $('#gender').on('change', function () {
+    $('#gender').on('change', function() {
         // Reset the form when the gender is changed
         resetForm();
     });
 
-        // Attach a click event listener to the "Calculate" button
-        $('#calculate').on('click', function () {
-            // Get the value of the first email field
-            var value1 = $('#email').val();
+    // Attach a click event listener to the "Calculate" button
+    $('#calculate').on('click', function() {
+        // Get the value of the first email field
+        var value1 = $('#email').val();
 
-            // Automatically fill the second email field with the value of the first one
-            $('#email-yui_3_17_2_1_1699523189995_1516-field').val(value1);
+        // Automatically fill the second email field with the value of the first one
+        $('#email-yui_3_17_2_1_1699523189995_1516-field').val(value1);
 
-            // Trigger the form submission for the Squarespace newsletter block
-            $('#email-yui_3_17_2_1_1699523189995_1516-field').submit();
-        });
+        // Trigger the form submission for the Squarespace newsletter block
+        $('#email-yui_3_17_2_1_1699523189995_1516-field').submit();
     });
+});
