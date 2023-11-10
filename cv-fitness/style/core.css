@@ -18,7 +18,7 @@
 
 /*** Disable Pagination ***/
 
-#itemPagination {
+#itemPagination, .lesson-item-pagination {
   display: none;
 }
 
