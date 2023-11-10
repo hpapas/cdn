@@ -55,6 +55,49 @@ function calculateCalories() {
     }
 }
 
+// Function to calculate BMR using Harris-Benedict Formula
+function calculateDailyCalories(age, weight, height, activityLevel, goal) {
+    // Perform Harris-Benedict Formula calculation
+    var baseCalories = 10 * weight + 6.25 * height - 5 * age;
+    var activityMultiplier = getActivityMultiplier(activityLevel);
+    var calculatedCalories = baseCalories * activityMultiplier;
+
+    // Adjust calories based on the goal
+    switch (goal) {
+        case 'lose':
+            calculatedCalories -= 500; // Adjust for weight loss (example value)
+            break;
+        case 'maintain':
+            // No adjustment for weight maintenance
+            break;
+        case 'gain':
+            calculatedCalories += 300; // Adjust for weight gain (example value)
+            break;
+        // Add more cases for other goals if needed
+    }
+
+    return calculatedCalories;
+}
+
+// Function to get the activity level multiplier
+function getActivityMultiplier(activityLevel) {
+    // Replace with your actual logic to determine the activity multiplier
+    switch (activityLevel) {
+        case 'sedentary':
+            return 1.2;
+        case 'light':
+            return 1.375;
+        case 'moderate':
+            return 1.55;
+        case 'active':
+            return 1.725;
+        case 'veryActive':
+            return 1.9;
+        default:
+            return 1.2; // Default to sedentary if activity level is not recognized
+    }
+}
+
 // Wait for the document to be ready
 $(document).ready(function () {
     // Attach a change event listener to the "units" radio buttons
