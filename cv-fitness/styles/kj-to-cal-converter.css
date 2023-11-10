@@ -2,12 +2,12 @@
     border: solid var(--form-field-border-thickness) var(--dynamic-border-color,#a9a9a9);
     border-radius: 0;
     box-shadow: 0 0 0 1px transparent;
-  color: var(--dynamic-input-text-color,#000000);
-  background-color: var(--dynamic-fill-color,#fafafa);
+    color: var(--dynamic-input-text-color,#000000);
+    background-color: var(--dynamic-fill-color,#fafafa);
     transition: var(--fill-hover-transition);
-  padding: var(--form-field-padding-vertical) var(--form-field-padding-horizontal);
-  font-size: calc((var(--form-block-input-text-font-font-size-value) - 1) * 1.2vw + 1rem) !important;
-      font-family: var(--form-block-input-text-font-font-family);
+    padding: var(--form-field-padding-vertical) var(--form-field-padding-horizontal);
+    font-size: calc((var(--form-block-input-text-font-font-size-value) - 1) * 1.2vw + 1rem) !important;
+    font-family: var(--form-block-input-text-font-font-family);
     font-style: var(--form-block-input-text-font-font-style);
     font-weight: var(--form-block-input-text-font-font-weight);
     line-height: var(--form-block-input-text-font-line-height);
