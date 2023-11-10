@@ -1,4 +1,4 @@
-       // Function to update units in the form
+        // Function to update units in the form
         function updateUnits(selectedUnit) {
             var weightUnit = $('#weightUnit');
             var heightUnit = $('#heightUnit');
@@ -10,6 +10,9 @@
                 weightUnit.text('kg');
                 heightUnit.text('cm');
             }
+
+            // Reset form fields
+            $('#age, #weight, #height, #goal, #activity, #email').val('');
 
             // Recalculate calories when units are changed
             calculateCalories();
