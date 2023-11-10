@@ -71,6 +71,15 @@ function getActivityMultiplier(activityLevel) {
 
 // Wait for the document to be ready
 $(document).ready(function () {
+    // Attach a change event listener to the goal selector
+    $('#units').on('change', function () {
+        // Get the selected goal
+        var selectedUnit = $(this).val();
+
+        // Call the updateUnits function with the selected goal
+        updateUnits(selectedUnit);
+    });
+
     // Attach a click event listener to the "Calculate" button
     $('#calculate').on('click', function () {
         // Get the value of the first email field
