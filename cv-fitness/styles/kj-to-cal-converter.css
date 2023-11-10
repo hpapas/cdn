@@ -1,16 +1,47 @@
-#kJ, #cal {
-    border: solid var(--form-field-border-thickness) var(--dynamic-border-color,#a9a9a9);
-    border-radius: 0;
-    box-shadow: 0 0 0 1px transparent;
-    color: var(--dynamic-input-text-color,#000000);
-    background-color: var(--dynamic-fill-color,#fafafa);
-    transition: var(--fill-hover-transition);
-    padding: var(--form-field-padding-vertical) var(--form-field-padding-horizontal);
-    font-size: calc((var(--form-block-input-text-font-font-size-value) - 1) * 1.2vw + 1rem) !important;
-    font-family: var(--form-block-input-text-font-font-family);
-    font-style: var(--form-block-input-text-font-font-style);
-    font-weight: var(--form-block-input-text-font-font-weight);
-    line-height: var(--form-block-input-text-font-line-height);
-    letter-spacing: var(--form-block-input-text-font-letter-spacing);
-    text-transform: var(--form-block-input-text-font-text-transform);
+#kJ,
+#cal {
+  border: solid var(--form-field-border-thickness)
+    var(--dynamic-border-color, #a9a9a9);
+  border-radius: 0;
+  box-shadow: 0 0 0 1px transparent;
+  color: var(--dynamic-input-text-color, #000000);
+  background-color: var(--dynamic-fill-color, #fafafa);
+  transition: var(--fill-hover-transition);
+  padding: var(--form-field-padding-vertical)
+    var(--form-field-padding-horizontal);
+  font-size: calc(
+    (var(--form-block-input-text-font-font-size-value) - 1) * 1.2vw + 1rem
+  ) !important;
+  font-family: var(--form-block-input-text-font-font-family);
+  font-style: var(--form-block-input-text-font-font-style);
+  font-weight: var(--form-block-input-text-font-font-weight);
+  line-height: var(--form-block-input-text-font-line-height);
+  letter-spacing: var(--form-block-input-text-font-letter-spacing);
+  text-transform: var(--form-block-input-text-font-text-transform);
+}
+
+#converterForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 400px;
+  /* You can adjust the max-width to your preference */
+  margin: auto;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  width: 45%;
+  /* Adjust the width of the input fields as needed */
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#result {
+  width: 100%;
+  margin-top: 10px;
 }
