@@ -40,16 +40,15 @@
   font-weight: 700;
 }
 
-#calorieForm {
-      display: table;
-      width: 100%;
-      border-spacing: 10px; /* Adjust the spacing as per your design preferences */
+    #calorieForm {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     .calc-form-section {
-      display: table-cell;
-      vertical-align: top; /* Align content to the top of the cell */
-      width: 33.33%; /* Each cell takes up one-third of the table */
+      width: calc(33.33% - 10px); /* Adjust for spacing */
+      box-sizing: border-box;
       padding: 10px; /* Add padding for spacing */
     }
 
