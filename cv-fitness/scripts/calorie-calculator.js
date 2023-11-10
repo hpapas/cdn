@@ -36,6 +36,13 @@ function calculateCalories() {
     var units = $('input[name="units"]:checked').val(); // Get selected units
     var goal = $('#goal').val(); // Get selected goal
 
+    // Check if the email is provided
+    if (!email || !isValidEmail(email)) {
+        // Display an error message and do not proceed with the submission
+        $('#result').text('Error: Please enter a valid email address.');
+        return;
+    }
+
     // Convert weight and height to metric or imperial if necessary
     if (units === 'imperial') {
         weight *= 0.453592; // Convert pounds to kilograms
@@ -53,6 +60,12 @@ function calculateCalories() {
         // Display a custom error message
         $('#result').text('Error: Please enter valid values for calculation.');
     }
+}
+// Function to check if the provided email is valid
+function isValidEmail(email) {
+    // Replace this with your email validation logic
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
 }
 
 // Function to calculate BMR using Harris-Benedict Formula
