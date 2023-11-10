@@ -35,3 +35,7 @@
     text-transform: var(--form-block-select-dropdown-text-font-text-transform);
   padding: var(--form-field-padding-vertical) var(--form-field-padding-horizontal);
 }
+
+#calorieForm label {
+  font-weight: 700;
+}
