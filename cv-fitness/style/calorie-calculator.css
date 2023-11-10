@@ -40,7 +40,7 @@
   font-weight: 700;
 }
 
-#calorieForm {
+    #calorieForm {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -51,4 +51,11 @@
       box-sizing: border-box;
       padding: 10px; /* Add padding for spacing */
     }
+
+input,select {
+     width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+}
 
