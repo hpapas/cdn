@@ -1,4 +1,4 @@
-        // Function to update units in the form
+      // Function to update units in the form
         function updateUnits(selectedUnit) {
             var weightUnit = $('#weightUnit');
             var heightUnit = $('#heightUnit');
@@ -11,10 +11,33 @@
                 heightUnit.text('cm');
             }
 
+            // Recalculate calories when units are changed
+            calculateCalories();
+        }
+
+        // Function to update gender in the form
+        function updateGender() {
+            // Reset form fields when gender is changed
+            $('#age, #weight, #height, #email').val('');
+
+            // Set default values for Goal and Activity Level
+            $('#goal').val('lose');
+            $('#activity').val('sedentary');
+
+            // Recalculate calories when gender is changed
+            calculateCalories();
+        }
+
+        // Function to reset the form
+        function resetForm() {
             // Reset form fields
             $('#age, #weight, #height, #goal, #activity, #email').val('');
 
-            // Recalculate calories when units are changed
+            // Set default values for Goal and Activity Level
+            $('#goal').val('lose');
+            $('#activity').val('sedentary');
+
+            // Recalculate calories after resetting
             calculateCalories();
         }
 
