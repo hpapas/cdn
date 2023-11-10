@@ -18,3 +18,9 @@
   letter-spacing: var(--form-block-input-text-font-letter-spacing);
   text-transform: var(--form-block-input-text-font-text-transform);
 }
+
+.kJ-section, .cal-section {
+  width: 50%;
+  display: table-cell;
+  padding: 10px;
+}
