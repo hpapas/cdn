@@ -37,8 +37,11 @@
             $('#goal').val('lose');
             $('#activity').val('sedentary');
 
-            // Recalculate calories after resetting
-            calculateCalories();
+            // Reset result display
+            $('#result').text('');
+
+            // Update units display
+            updateUnits('metric');
         }
 
         // Function to calculate daily estimated calories
@@ -121,14 +124,12 @@
         // Wait for the document to be ready
         $(document).ready(function () {
             // Attach a click event listener to the "Calculate" button
-            $('#calculate').on('click', function () {
-                // Get the value of the first email field
-                var value1 = $('#email').val();
+            $('#calculate').on('click', calculateCalories);
 
-                // Automatically fill the second email field with the value of the first one
-                $('#email-yui_3_17_2_1_1699523189995_1516-field').val(value1);
+            // Attach a click event listener to the "Reset" button
+            $('#reset').on('click', resetForm);
 
-                // Trigger the form submission for the Squarespace newsletter block
-                $('#email-yui_3_17_2_1_1699523189995_1516-field').submit();
-            });
+            // Initialize units and gender on page load
+            updateUnits('metric');
+            updateGender();
         });
