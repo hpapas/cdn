@@ -21,7 +21,7 @@ function resetForm() {
     $('#age').val('');
     $('#weight').val('');
     $('#height').val('');
-    $('#goal').val('maintain'); // Set default goal
+    $('#goal').val('lose'); // Set default goal
     $('#activity').val('sedentary'); // Set default activity level
     $('#result').text(''); // Clear the result display
 }
