@@ -36,13 +36,6 @@ function calculateCalories() {
     var units = $('input[name="units"]:checked').val(); // Get selected units
     var goal = $('#goal').val(); // Get selected goal
 
-    // Check if the email is provided
-    if (!email.trim()) {
-        // Display an error message and do not proceed with the submission
-        $('#result').text('Error: Please enter your email address.');
-        return;
-    }
-
     // Convert weight and height to metric or imperial if necessary
     if (units === 'imperial') {
         weight *= 0.453592; // Convert pounds to kilograms
