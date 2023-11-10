@@ -1,5 +1,4 @@
-#kJ,
-#cal {
+#kJ, #cal {
   border: solid var(--form-field-border-thickness)
     var(--dynamic-border-color, #a9a9a9);
   border-radius: 0;
@@ -18,30 +17,4 @@
   line-height: var(--form-block-input-text-font-line-height);
   letter-spacing: var(--form-block-input-text-font-letter-spacing);
   text-transform: var(--form-block-input-text-font-text-transform);
-}
-
-#converterForm {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 100%;
-  /* You can adjust the max-width to your preference */
-  margin: auto;
-}
-
-label {
-  margin-bottom: 5px;
-}
-
-input {
-  width: 45%;
-  /* Adjust the width of the input fields as needed */
-  padding: 8px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-#result {
-  width: 100%;
-  margin-top: 10px;
 }
