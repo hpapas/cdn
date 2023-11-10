@@ -24,3 +24,7 @@
   display: table-cell;
   padding: 10px;
 }
+
+#converterForm label {
+  font-weight: 700;
+}
