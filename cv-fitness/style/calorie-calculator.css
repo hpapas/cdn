@@ -33,4 +33,5 @@
     line-height: var(--form-block-select-dropdown-text-font-line-height);
     letter-spacing: var(--form-block-select-dropdown-text-font-letter-spacing);
     text-transform: var(--form-block-select-dropdown-text-font-text-transform);
+  padding: var(--form-field-padding-vertical) var(--form-field-padding-horizontal);
 }
