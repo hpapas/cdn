@@ -48,7 +48,7 @@ function calculateCalories() {
     // Check if the result is a valid number
     if (!isNaN(calculatedCalories)) {
         // Display the calculated calories
-        $('#result').text('Daily Estimated Calories: ' + calculatedCalories.toFixed(2) + ' kcal');
+        $('#result').text('Daily Estimated Calories: ' + calculatedCalories.toFixed(2) + ' cal');
     } else {
         // Display a custom error message
         $('#result').text('Error: Please enter valid values for calculation.');
