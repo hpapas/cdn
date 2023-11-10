@@ -1,3 +1,17 @@
+// Function to update units in the form
+function updateUnits(selectedUnit) {
+    var weightUnit = $('#weightUnit');
+    var heightUnit = $('#heightUnit');
+
+    if (selectedUnit === 'imperial') {
+        weightUnit.text('lbs');
+        heightUnit.text('in');
+    } else {
+        weightUnit.text('kg');
+        heightUnit.text('cm');
+    }
+}
+
 // Function to calculate daily estimated calories
 function calculateCalories() {
     // Get values from the form
@@ -36,14 +50,34 @@ function calculateDailyCalories(age, weight, height, activityLevel, goal) {
 
     // Adjust calories based on the goal
     switch (goal) {
-        case 'weightLoss':
+        case 'lose':
             calculatedCalories -= 500; // Adjust for weight loss (example value)
             break;
-        case 'muscleGain':
-            calculatedCalories += 300; // Adjust for muscle gain (example value)
+        case 'maintain':
+            // No adjustment for weight maintenance
+            break;
+        case 'gain':
+            calculatedCalories += 300; // Adjust for weight gain (example value)
             break;
         // Add more cases for other goals if needed
     }
 
     return calculatedCalories;
 }
+
+// Wait for the document to be ready
+$(document).ready(function () {
+    // Attach a change event listener to the goal selector
+    $('#units').on('change', function () {
+        // Get the selected goal
+        var selectedUnit = $(this).val();
+
+        // Call the updateUnits function with the selected goal
+        updateUnits(selectedUnit);
+    });
+
+    // Attach a click event listener to the "Calculate" button
+    $('#calculate').on('click', function () {
+        calculateCalories(); // Call the calculateCalories function
+    });
+});
