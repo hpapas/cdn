@@ -1,0 +1,121 @@
+@import 'https://static1.squarespace.com/static/versioned-site-css/651d44e4ef3707058391915f/30/5c5a519771c10ba3470d8101/651d44e4ef37070583919168/1463/site.css';
+
+/*** ANCHOR LINK ***/
+
+html {
+scroll-behavior: smooth;
+}
+
+.anchor-link {
+  scroll-margin: 150px;
+}
+
+/*** END ANCHOR LINK ***/
+
+/*** NAV LINK HOVER ***/
+
+.header-nav-item a:hover {
+  background-image: linear-gradient(currentColor,currentColor);
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-position: 0 calc(100% - 0.1em);
+}
+
+/*** END NAV LINK HOVER ***/
+
+/*** REMOVE HORIZONTAL SCROLLBAR ***/
+
+body {
+  overflow-x: hidden;
+}
+
+/*** END REMOVE HORIZONTAL SCROLLBAR ***/
+
+/*** HIDE ITEM PAGINATION ***/
+
+#itemPagination {
+  display: none;
+}
+
+/*** END ITEM PAGINATION ***/
+
+/*** TAB STYLE ***/
+
+div.wm-tabs-block {
+  --nav-background-opacity: .05;
+  --panels-background: white;
+  --panels-background-opacity: 1;
+
+  box-shadow: none;
+  
+  .nav-container {
+    padding-right:0px;
+  }
+  .wm-tab-button.active {
+    background: white;
+  }
+  .section-border,
+  .section-background{
+    background-color: var(--panels-background) !important;
+  }
+
+  nav > span {
+    display:none;
+  }
+  
+  .wm-tab-button {
+    font-family: var(--primary-button-font-font-family) !important;
+    font-style: var(--primary-button-font-font-style) !important;
+    font-weight: var(--primary-button-font-font-weight) !important;
+    line-height: var(--primary-button-font-line-height) !important;
+    letter-spacing: var(--primary-button-font-letter-spacing) !important;
+    text-transform: var(--primary-button-font-text-transform) !important;
+    font-size: 15px;
+  }
+  
+  .wm-tab-button.active {
+    color: var(--primaryButtonTextColor) !important;
+    background-color: var(--primaryButtonBackgroundColor) !important;
+    border-color: var(--primaryButtonTextColor) !important;
+  }
+  
+  .wm-tab-button:hover {
+    color: var(--primaryButtonTextColor) !important;
+    background-color: var(--primaryButtonBackgroundColor) !important;
+    border-color: var(--primaryButtonTextColor) !important;
+  }
+  
+}
+
+body div.wm-tabs-block .wm-tab-button.active {
+  color: var(--primaryButtonTextColor) !important;
+  background-color: var(--primaryButtonBackgroundColor) !important;
+  border-color: var(--primaryButtonTextColor) !important;
+}
+
+/*** END TAB STYLE ***/
+
+/*** OVERFLOW CAROUSEL STYLE ***/
+
+div.wm-overflow-slider{
+  --item-width: 415px !important;
+}
+
+.wm-overflow-slider .summary-item {
+  pointer-events: none !important;
+}
+
+div.wm-overflow-slider .carousel-buttons {
+  justify-content: space-between;
+}
+
+div.wm-overflow-slider{
+  display: flex !important;
+  flex-direction: column-reverse !important;
+
+  .carousel-buttons {
+    margin-bottom: 34px !important;
+  }
+}
+
+/*** END OVERFLOW CAROUSEL STYLE ***/
