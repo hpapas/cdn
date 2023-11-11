@@ -98,9 +98,9 @@ div.wm-tabs-block {
   }
   
   .wm-tab-button.active {
-    color: var(--primaryButtonTextColor) !important;
-    background-color: var(--primaryButtonBackgroundColor) !important;
-    border-color: var(--primaryButtonTextColor) !important;
+    color: var(--primaryButtonTextColor);
+    background-color: var(--primaryButtonBackgroundColor);
+    border-color: var(--primaryButtonTextColor);
   }
   
   .wm-tab-button:hover {
