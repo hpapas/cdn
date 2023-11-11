@@ -10,7 +10,7 @@
 .header-nav-item a:hover,
 .category-link:hover,
 .video-category-nav-link a:hover {
-  background-image: linear-gradient(currentColor,currentColor);
+  background-image: linear-gradient(currentColor,currentColor) !important;
   background-repeat: repeat-x;
   background-size: 1px 1px;
   background-position: 0 calc(100% - 0.1em);
