@@ -1,0 +1,97 @@
+/*** HIDE ITEM PAGINATION ***/
+
+#itemPagination {
+  display: none;
+}
+
+/*** END HIDE ITEM PAGINATION ***/
+
+/*** BLOG CUSTOMISATIONS ***/
+
+.blog-item-title h1 {
+  font-size: 35px !important;
+}
+
+.blog-meta-item--date {
+  margin-top: 15px;
+}
+
+.blog-basic-grid .blog-more-link {
+  font-size: 15px !important;
+  padding-top: 0 !important;
+}
+
+.sqs-block-archive .archive-block-setting-layout-dropdown.archive-block-wrapper {
+  max-width: 100% !important;
+}
+
+.blog-basic-grid .blog-article-spacer {
+  height: 30px !important;
+}
+
+.blog-basic-grid .blog-title {
+  margin-bottom: 15px !important;
+}
+
+/*** END BLOG CUSTOMISATIONS ***/
+
+/*** NAV LINK HOVER ***/
+
+.header-nav-item a:hover {
+  background-image: linear-gradient(currentColor,currentColor);
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-position: 0 calc(100% - 0.1em);
+}
+
+/*** END NAV LINK HOVER ***/
+
+/*** TAB STYLES ***/
+
+div.wm-tabs-block {
+  --nav-background-opacity: .05;
+  --panels-background: white;
+  --panels-background-opacity: 1;
+  
+  box-shadow: none;
+  
+  .nav-container {
+    padding-right:0px;
+  }
+  .wm-tab-button.active {
+    background: white;
+  }
+  .section-border,
+  .section-background{
+    background-color: var(--panels-background);
+  }
+
+  nav > span {
+    display:none;
+  }
+  
+  .wm-tab-button {
+    font-family: var(--primary-button-font-font-family);
+    font-style: var(--primary-button-font-font-style);
+    font-weight: var(--primary-button-font-font-weight);
+    line-height: var(--primary-button-font-line-height);
+    letter-spacing: var(--primary-button-font-letter-spacing);
+    text-transform: var(--primary-button-font-text-transform);
+    font-size: 15px;
+  }
+  
+  .wm-tab-button.active {
+    color: var(--primaryButtonTextColor);
+    background-color: var(--primaryButtonBackgroundColor);
+    border-color: var(--primaryButtonTextColor);
+  }
+  
+  .wm-tab-button:hover {
+    color: var(--primaryButtonTextColor);
+    background-color: var(--primaryButtonBackgroundColor);
+    border-color: var(--primaryButtonTextColor);
+  }
+  
+}
+
+/*** END TAB STYLES ***/
