@@ -63,7 +63,7 @@ div.wm-tabs-block {
   }
   .section-border,
   .section-background{
-    background-color: var(--panels-background);
+    background-color: var(--panels-background) !important;
   }
 
   nav > span {
@@ -71,25 +71,25 @@ div.wm-tabs-block {
   }
   
   .wm-tab-button {
-    font-family: var(--primary-button-font-font-family);
-    font-style: var(--primary-button-font-font-style);
-    font-weight: var(--primary-button-font-font-weight);
-    line-height: var(--primary-button-font-line-height);
-    letter-spacing: var(--primary-button-font-letter-spacing);
-    text-transform: var(--primary-button-font-text-transform);
-    font-size: 15px;
+    font-family: var(--primary-button-font-font-family) !important;
+    font-style: var(--primary-button-font-font-style) !important;
+    font-weight: var(--primary-button-font-font-weight) !important;
+    line-height: var(--primary-button-font-line-height) !important;
+    letter-spacing: var(--primary-button-font-letter-spacing) !important;
+    text-transform: var(--primary-button-font-text-transform) !important;
+    font-size: 15px !important;
   }
   
   .wm-tab-button.active {
-    color: var(--primaryButtonTextColor);
-    background-color: var(--primaryButtonBackgroundColor);
-    border-color: var(--primaryButtonTextColor);
+    color: var(--primaryButtonTextColor) !important;
+    background-color: var(--primaryButtonBackgroundColor) !important;
+    border-color: var(--primaryButtonTextColor) !important;
   }
   
   .wm-tab-button:hover {
-    color: var(--primaryButtonTextColor);
-    background-color: var(--primaryButtonBackgroundColor);
-    border-color: var(--primaryButtonTextColor);
+    color: var(--primaryButtonTextColor) !important;
+    background-color: var(--primaryButtonBackgroundColor) !important;
+    border-color: var(--primaryButtonTextColor) !important;
   }
   
 }
