@@ -1,5 +1,3 @@
-@import 'https://static1.squarespace.com/static/versioned-site-css/652a61910045f920b85ee095/32/5c5a519771c10ba3470d8101/652a61910045f920b85ee09d/1463/site.css';
-
 .lessons.collection-content-wrapper .grid-desc.description,
 .fe-block-yui_3_17_2_1_1699522520637_14176 {
   display: none !important;
@@ -62,53 +60,3 @@ div.wm-before-after-slider {
 }
 
 /*** END Before/After Slider Styling ***/
-
-/*** TAB STYLES ***/
-
-div.wm-tabs-block {
-  --nav-background-opacity: .05;
-  --panels-background: white;
-  --panels-background-opacity: 1;
-  
-  box-shadow: none;
-  
-  .nav-container {
-    padding-right:0px;
-  }
-  .wm-tab-button.active {
-    background: white;
-  }
-  .section-border,
-  .section-background{
-    background-color: var(--panels-background);
-  }
-
-  nav > span {
-    display:none;
-  }
-  
-  .wm-tab-button {
-    font-family: var(--primary-button-font-font-family);
-    font-style: var(--primary-button-font-font-style);
-    font-weight: var(--primary-button-font-font-weight);
-    line-height: var(--primary-button-font-line-height);
-    letter-spacing: var(--primary-button-font-letter-spacing);
-    text-transform: var(--primary-button-font-text-transform);
-    font-size: 15px;
-  }
-  
-  .wm-tab-button.active {
-    color: var(--primaryButtonTextColor);
-    background-color: var(--primaryButtonBackgroundColor);
-    border-color: var(--primaryButtonTextColor);
-  }
-  
-  .wm-tab-button:hover {
-    color: var(--primaryButtonTextColor);
-    background-color: var(--primaryButtonBackgroundColor);
-    border-color: var(--primaryButtonTextColor);
-  }
-  
-}
-
-/*** END TAB STYLES ***/
