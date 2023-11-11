@@ -98,9 +98,9 @@ div.wm-tabs-block {
   }
   
   .wm-tab-button.active {
-    color: var(--primaryButtonTextColor);
-    background-color: var(--primaryButtonBackgroundColor);
-    border-color: var(--primaryButtonTextColor);
+    color: var(--primaryButtonTextColor) !important;
+    background-color: var(--primaryButtonBackgroundColor) !important;
+    border-color: var(--primaryButtonTextColor) !important;
   }
   
   .wm-tab-button:hover {
@@ -109,6 +109,12 @@ div.wm-tabs-block {
     border-color: var(--primaryButtonTextColor) !important;
   }
   
+}
+
+body div.wm-tabs-block .wm-tab-button.active {
+  color: var(--primaryButtonTextColor) !important;
+  background-color: var(--primaryButtonBackgroundColor) !important;
+  border-color: var(--primaryButtonTextColor) !important;
 }
 
 /*** END TAB STYLES ***/
