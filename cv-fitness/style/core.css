@@ -17,9 +17,12 @@
 }
 
 @media (max-width: 768px) {
-  .header-menu-nav-item a,
-  .header-menu-cta a {
+  .header-menu-nav-item a {
     font-size: 25px !important;
+  }
+
+  .header-menu-cta a {
+    font-size: 18px !important;
   }
 }
 
