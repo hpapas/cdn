@@ -5,7 +5,7 @@
   display: none !important;
 }
 
-/*** Hover Nav Links ***/
+/*** Nav ***/
 
 .header-nav-item a:hover,
 .category-link:hover,
@@ -16,7 +16,13 @@
   background-position: 0 calc(100% - 0.1em);
 }
 
-/*** END Hover Nav Links ***/
+@media (max-width: 768px) {
+  .header-menu-nav-item a {
+    font-size: 25px !important;
+  }
+}
+
+/*** END Nav ***/
 
 /*** Disable Pagination ***/
 
