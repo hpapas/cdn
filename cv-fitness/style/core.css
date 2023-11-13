@@ -133,11 +133,8 @@ body div.wm-tabs-block .wm-tab-button.active {
 
 @media (max-width: 768px) {
 
-  #block-01a415bc7a90d2f92e3e, #block-yui_3_17_2_1_1697277071969_16680 {
-    text-align: center !important;
-  }
-
-  footer .newsletter-block .newsletter-form-wrapper--alignRight .newsletter-form,
+  #block-01a415bc7a90d2f92e3e, #block-yui_3_17_2_1_1697277071969_16680,
+  footer .newsletter-block .newsletter-form-wrapper--alignRight .newsletter-form, 
   footer .social-icon-alignment-right .sqs-svg-icon--list {
     text-align: center !important;
   }
