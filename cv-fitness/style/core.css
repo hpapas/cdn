@@ -38,7 +38,38 @@
 
 /*** Before/After Slider Styling ***/
 
+div.wm-before-after-slider {
+  --aspect-ratio: 1 / 1;
+  --disable-hover: false;
+  --starting-position: 0.5 !important;
+  --border-thickness: 2px;
+  --border-color: #ffffff;
+  --shadow: none;
+  --border-radius: 0.2rem;
 
+  --divider-thickness: 2px;
+  --divider-color: #ffffff;
+
+  --handle-size: 50px;
+  --handle-border-color: #ffffff;
+  --handle-background: hsla(0,0%,0%, 0);
+  --handle-thickness: 2px;
+  --handle-color: #ffffff;
+
+  --caption-offset: 17px;
+  --caption-font-size: .9rem;
+  --caption-border-radius: 0.2rem;
+  --caption-padding-v: 8px;
+  --caption-padding-h: 17px;
+
+  --before-text: Before;
+  --caption-before-background: #000000;
+  --caption-before-color: #ffffff;
+
+  --after-text: After;
+  --caption-after-background: #000000;
+  --caption-after-color: #ffffff;
+}
 
 /*** END Before/After Slider Styling ***/
 
