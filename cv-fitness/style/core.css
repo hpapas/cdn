@@ -41,7 +41,7 @@
 div.wm-before-after-slider {
   --aspect-ratio: 1 / 1;
   --disable-hover: false;
-  --starting-position: 0.5;
+  --starting-position: 0.5 !important;
   --border-thickness: 2px;
   --border-color: #ffffff;
   --shadow: none;
