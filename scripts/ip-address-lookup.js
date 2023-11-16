@@ -1,4 +1,6 @@
-  window.addEventListener('load', function() {
+/* Just need <div id="result"></div> */
+
+window.addEventListener('load', function() {
   	fetch('https://api.ipify.org?format=json')
   		.then(response => response.json())
   		.then(data => displayIPAddress(data))
