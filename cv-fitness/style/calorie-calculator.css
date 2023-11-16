@@ -21,7 +21,7 @@
 }
 
 #calorieForm select {
-	width: 100%;
+	width: 100% !important;
 	border: solid var(--form-field-border-thickness) var(--dynamic-border-color,#a9a9a9);
 	border-radius: 0;
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
