@@ -2,6 +2,6 @@ var year = new Date().getFullYear();
 
 jQuery(document).ready(function() {
 
-  $('#block-a96f5105d48ffeb6c8fb p').html($('#block-a96f5105d48ffeb6c8fb p').html() .replace('[Year]', year));
+  $('#block-yui_3_17_2_1_1697277071969_16680 p').html($('#block-yui_3_17_2_1_1697277071969_16680 p').html() .replace('[Year]', year));
 
 });
