@@ -13,6 +13,8 @@ var slideOut = {
     textButton: "CHECKOUT", // Custom Checkout Text
     showIfCartUpdated: true, // Show Cart when update true or false
     closeOutside: true, // Close cart on overlay click true or false
+    textTop: "", // Custom Top Text
+    textAboveButton: "", // Custom Bottom text
     emptyMessageText: "Your Cart Is Empty", // Empty Message text
-    continueButtonText: "VISIT SHOP", // Continue Button text
+    continueButtonText: "VISIT STORE", // Continue Button text
 };
