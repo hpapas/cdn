@@ -97,7 +97,7 @@ div.wm-tabs-block {
     display:none;
   }
   
-  .wm-tab-button {
+  .wm-tab-button, div#sqs-cart-container .cart-checkout-button, div#sqs-cart-container .cart-continue-button, div#sqs-cart-container .cart-related-product-button {
     font-family: var(--primary-button-font-font-family) !important;
     font-style: var(--primary-button-font-font-style) !important;
     font-weight: var(--primary-button-font-font-weight) !important;
