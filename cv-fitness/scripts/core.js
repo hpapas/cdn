@@ -9,8 +9,8 @@ jQuery(document).ready(function() {
 var slideOut = {
     cartSide: "right", // Position, left or right
     animation: "slide", // Animation, slide or fade
-    textCart: "Your Cart", // Custom Cart Text or HTML
-    textButton: "Custom Checkout", // Custom Checkout Text
+    textCart: "YOUR CART", // Custom Cart Text or HTML
+    textButton: "CHECKOUT", // Custom Checkout Text
     showIfCartUpdated: true, // Show Cart when update true or false
     closeOutside: true, // Close cart on overlay click true or false
     textTop: "Top Text", // Custom Top Text
