@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tax Calculator</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    input, button {
+      padding: 5px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tax Calculator</h1>
+  <label for="dollarValue">Enter dollar value: $</label>
+  <input type="number" id="dollarValue">
+  <button onclick="calculateTax()">Calculate</button>
+  <div id="result"></div>
+
+  <script>
+    function calculateTax() {
+      const dollarValue = parseFloat(document.getElementById("dollarValue").value);
+      const taxAmount = dollarValue * 0.3;
+      const remainingAmount = dollarValue - taxAmount;
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = `
+        <p>Original amount: $${dollarValue}</p>
+        <p>Tax amount (30%): $${taxAmount.toFixed(2)}</p>
+        <p>Remaining amount after tax: $${remainingAmount.toFixed(2)}</p>
+      `;
+    }
+  </script>
+</body>
+</html>
