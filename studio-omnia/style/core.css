@@ -123,3 +123,7 @@ div.wm-overflow-slider{
 .accordion-item__description {
     max-width: 100% !important;
 }
+
+p a {
+  text-decoration: underline !important;
+}
