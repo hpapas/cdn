@@ -119,3 +119,7 @@ div.wm-overflow-slider{
 }
 
 /*** END OVERFLOW CAROUSEL STYLE ***/
+
+.accordion-item__description {
+    max-width: 100% !important;
+}
