@@ -26,6 +26,15 @@
   }
 }
 
+.floating-cart {
+    background-color: #fff;
+    color: #000;
+}
+
+.floating-cart .icon--stroke svg {
+    stroke: #000;
+}
+
 /*** END Nav ***/
 
 /*** Disable Pagination ***/
