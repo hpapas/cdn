@@ -127,3 +127,15 @@ div.wm-overflow-slider{
 p a {
   text-decoration: underline !important;
 }
+
+/*** FOOTER STYLE ***/
+
+@media (max-width: 768px) {
+
+  #block-yui_3_17_2_1_1696600459296_5906 {
+    text-align: left !important;
+  }
+  
+}
+
+/*** END FOOTER STYLE ***/
