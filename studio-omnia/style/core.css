@@ -143,6 +143,10 @@ p a {
   .header-display-mobile .header-title-text {
     font-size: 28px !important;
   }
+
+  #block-yui_3_17_2_1_1696418565723_4122 h3 {
+    text-align: center !important;
+  }
   
 }
 
