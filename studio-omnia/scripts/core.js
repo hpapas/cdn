@@ -14,6 +14,10 @@ jQuery(document).ready(function() {
     jQuery(".header-nav-item--external").css({"display":"none"});
   }
 
+  if (window.location.href.indexOf("submit-review") > -1) {
+    jQuery(".header-nav-item--external").css({"display":"none"});
+  }
+
   $('#block-a96f5105d48ffeb6c8fb p').html($('#block-a96f5105d48ffeb6c8fb p').html() .replace('[Year]', year));
 
 });
