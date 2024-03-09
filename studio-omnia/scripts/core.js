@@ -14,7 +14,7 @@ jQuery(document).ready(function() {
     jQuery(".header-nav-item--external").css({"display":"none"});
   }
 
-  if (window.location.href.indexOf("submit-review") > -1) {
+  if (window.location.href.indexOf("submit") > -1) {
     jQuery(".header-nav-item--external").css({"display":"none"});
   }
 
