@@ -5,6 +5,10 @@
   display: none !important;
 }
 
+.accordion-item__description {
+    max-width: 100% !important;
+}
+
 /*** Nav ***/
 
 .header-nav-item a:hover,
