@@ -20,5 +20,5 @@ var slideOut = {
 };
 
 <div data-wm-plugin="subnav"
-     data-position="top-center">
+     data-position="top-right">
 </div>
