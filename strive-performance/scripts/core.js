@@ -18,7 +18,3 @@ var slideOut = {
     emptyMessageText: "Your Cart Is Empty", // Empty Message text
     continueButtonText: "VISIT STORE", // Continue Button text
 };
-
-<div data-wm-plugin="subnav"
-     data-position="top-right">
-</div>
