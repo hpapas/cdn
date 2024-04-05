@@ -15,9 +15,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Heading" !important;
 }
 
-p, span, a {
+/* p, span, a {
     font-family: "Paragraph" !important;
-}
+} */
 
 #block-4f6b2e26fa2fee3f6c94 .sqs-block-alignment-wrapper {
     justify-content: center;
