@@ -14,6 +14,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
     font-family: "Heading" !important;
 }
 
+p {
+    font-family: "Paragraph" !important;
+}
+
 .lessons.collection-content-wrapper .grid-desc.description,
 .fe-block-yui_3_17_2_1_1699522520637_14176 {
   display: none !important;
