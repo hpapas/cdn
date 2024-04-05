@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: "Heading";
-    src: url(https://hpapas-cdn.pages.dev/strive-performance/fonts/BebasNeue.otf) format("truetype");
+    src: url('https://hpapas-cdn.pages.dev/strive-performance/fonts/BebasNeue.otf') format("truetype");
 }
 
 @font-face {
     font-family: "Paragraph";
-    src: url(https://hpapas-cdn.pages.dev/strive-performance/fonts/Avenir.ttf) format("truetype");
+    src: url('https://hpapas-cdn.pages.dev/strive-performance/fonts/Avenir.ttf') format("truetype");
 }
 
 .lessons.collection-content-wrapper .grid-desc.description,
