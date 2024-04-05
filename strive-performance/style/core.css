@@ -10,6 +10,10 @@
     src: url('https://hpapas-cdn.pages.dev/strive-performance/fonts/Avenir.ttf') format("truetype");
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Heading" !important;
+}
+
 .lessons.collection-content-wrapper .grid-desc.description,
 .fe-block-yui_3_17_2_1_1699522520637_14176 {
   display: none !important;
