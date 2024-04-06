@@ -194,3 +194,16 @@ body div.wm-tabs-block .wm-tab-button.active {
 }
 
 /*** END Footer ***/
+
+/*** Section Loader ***/
+
+[data-wm-plugin="load"]{
+  --inner-spacing: 17px 17px;
+  --outer-spacing: 0px 0px;
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 0px;
+  border-color: hsla(0, 0%, 100%, 100%);
+}
+
+/*** END Section Loader ***/
