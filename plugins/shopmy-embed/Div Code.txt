@@ -1,0 +1,1 @@
+<div data-hp-shopmy-title="XYZTitle" data-hp-shopmy-collectionid="123456"></div>
