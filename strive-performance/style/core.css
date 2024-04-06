@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Paragraph" !important;
 } */
 
+.sqs-block-button-element {
+    border-width: 0 !important;
+}
+
 #block-4f6b2e26fa2fee3f6c94 .sqs-block-alignment-wrapper {
     justify-content: center;
     background: linear-gradient(270deg, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%);
