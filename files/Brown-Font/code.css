@@ -1,0 +1,35 @@
+
+  @font-face {
+    font-family: 'Brown';
+    font-display: swap;
+    src: url('https://fentybeauty.com/cdn/shop/t/1767/assets/Brown-Regular.eot?v=27088451516903239001717783708');
+    src:
+      url('https://fentybeauty.com/cdn/shop/t/1767/assets/Brown-Regular.eot?%23iefix&v=27088451516903239001717783708') format('embedded-opentype'),
+      url('https://fentybeauty.com/cdn/shop/t/1767/assets/Brown-Regular.woff?v=150921627919260360721717783709') format('woff'),
+      url('https://fentybeauty.com/cdn/shop/t/1767/assets/Brown-Regular.ttf?v=115637988466508316281717783709') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Brown';
+    font-display: swap;
+    src: url('https://fentybeauty.com/cdn/shop/t/1767/assets/Brown-Bold.eot?v=33612082586590809171717783706');
+    src:
+      url('https://fentybeauty.com/cdn/shop/t/1767/assets/Brown-Bold.eot?%23iefix&v=33612082586590809171717783706') format('embedded-opentype'),
+      url('https://fentybeauty.com/cdn/shop/t/1767/assets/Brown-Bold.woff?v=103279414557816002091717783707') format('woff'),
+      url('https://fentybeauty.com/cdn/shop/t/1767/assets/Brown-Bold.ttf?v=42567334854025871831717783706') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Brown';
+    font-display: swap;
+    src: url('https://fentybeauty.com/cdn/shop/t/1767/assets/Brown-Light.eot?v=178273650160260869511717783708');
+    src:
+      url('https://fentybeauty.com/cdn/shop/t/1767/assets/Brown-Light.eot?%23iefix&v=178273650160260869511717783708') format('embedded-opentype'),
+      url('https://fentybeauty.com/cdn/shop/t/1767/assets/Brown-Light.ttf?v=88026038986199904091717783708') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
