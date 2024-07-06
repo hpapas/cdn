@@ -127,56 +127,13 @@ div.wm-before-after-slider {
 
 /*** Tab Styles ***/
 
-div.wm-tabs-block {
-  --nav-background-opacity: .05;
-  --panels-background: white;
-  --panels-background-opacity: 1;
-  
-  box-shadow: none;
-  
-  .nav-container {
-    padding-right:0px;
-  }
-  .wm-tab-button.active {
-    background: white;
-  }
-  .section-border,
-  .section-background{
-    background-color: var(--panels-background) !important;
-  }
-
-  nav > span {
-    display:none;
-  }
-  
-  .wm-tab-button {
-    font-family: var(--primary-button-font-font-family) !important;
-    font-style: var(--primary-button-font-font-style) !important;
-    font-weight: var(--primary-button-font-font-weight) !important;
-    line-height: var(--primary-button-font-line-height) !important;
-    letter-spacing: var(--primary-button-font-letter-spacing) !important;
-    text-transform: var(--primary-button-font-text-transform) !important;
-    font-size: 15px;
-  }
-  
-  .wm-tab-button.active {
-    color: var(--primaryButtonTextColor) !important;
-    background-color: var(--primaryButtonBackgroundColor) !important;
-    border-color: var(--primaryButtonTextColor) !important;
-  }
-  
-  .wm-tab-button:hover {
-    color: var(--primaryButtonTextColor) !important;
-    background-color: var(--primaryButtonBackgroundColor) !important;
-    border-color: var(--primaryButtonTextColor) !important;
-  }
-  
+.wm-tabs[data-navigation-type="horizontal"] {
+  --nav-scrollbar-display: none;
+  --tabs-header-gap: 0px;
 }
-
-body div.wm-tabs-block .wm-tab-button.active {
-  color: var(--primaryButtonTextColor) !important;
-  background-color: var(--primaryButtonBackgroundColor) !important;
-  border-color: var(--primaryButtonTextColor) !important;
+.wm-tabs[data-navigation-type="horizontal"] .tabs-header nav button {
+  flex-grow: 1;
+  flex-basis: ~'calc(100% / var(--tabs-count))';
 }
 
 /*** END Tab Styles ***/
