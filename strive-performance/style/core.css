@@ -142,7 +142,7 @@ div.wm-tabs {
 
 .wm-tabs nav .tab-title {
     font-family: var(--body-font-font-family) !important;
-    font-weight: 700 !important;
+    font-weight: 500 !important;
 }
 
 /*** END Tab Styles ***/
