@@ -21,6 +21,15 @@ document.addEventListener("DOMContentLoaded", function() {
         var collectionTitle = shopmyDiv.getAttribute('data-hp-shopmy-title');
         var embedType = shopmyDiv.getAttribute('data-hp-shopmy-embed-type') || 'carousel'; // Default to 'carousel' if not specified
         
+        // Debug output
+        console.log("Processing DIV with collectionId:", collectionId);
+        console.log("Embed Type:", embedType);
+
+        if (!collectionId) {
+            console.error("Missing collectionId attribute for:", shopmyDiv);
+            return; // Skip this div
+        }
+
         var src, style;
 
         if (embedType === 'full') {
@@ -30,13 +39,11 @@ document.addEventListener("DOMContentLoaded", function() {
             src = 'https://shopmy.us/collections/embed/' + collectionId + '?';
             style = 'width: 100%; min-height: 360px; border: none;';
         } else {
-            // Handle any other types or provide a default behavior if needed
             console.warn("Unknown embed type: ", embedType);
-            return;
+            return; // Skip this div
         }
 
         // Debug output
-        console.log("Embed Type:", embedType);
         console.log("Iframe SRC:", src);
         console.log("Iframe Style:", style);
 
@@ -46,3 +53,4 @@ document.addEventListener("DOMContentLoaded", function() {
         shopmyDiv.innerHTML = embedCode;
     });
 });
+
