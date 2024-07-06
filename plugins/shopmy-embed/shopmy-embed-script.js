@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         // Debug output
         console.log("Processing DIV with collectionId:", collectionId);
+        console.log("Processing DIV with collectionTitle:", collectionTitle);
         console.log("Embed Type:", embedType);
 
         if (!collectionId) {
