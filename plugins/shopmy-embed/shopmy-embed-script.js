@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (embedType === 'collection') {
             src = 'https://shopmy.us/collections/public/' + collectionId + '?noHeader=true';
-            style = 'width: 100%; min-height: 1200px; border: none;';
+            style = 'width: 100%; min-height: 80vh; border: none;';
         } else if (embedType === 'carousel') {
             src = 'https://shopmy.us/collections/embed/' + collectionId + '?';
             style = 'width: 100%; min-height: 360px; border: none;';
