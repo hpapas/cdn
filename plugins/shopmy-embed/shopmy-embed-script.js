@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", function() {
             src = 'https://shopmy.us/collections/embed/' + collectionId + '?';
             style = 'width: 100%; min-height: 360px; border: none;';
         } else if (embedType) {
-            console.warn("Unknown embed type: ", embedType);
+            console.warn("Unknown embed type");
             return; // Skip this div
         } else {
-            console.warn("No embed type specified for:", shopmyDiv);
+            console.warn("No embed type specified");
             return; // Skip this div
         }
 
