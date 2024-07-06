@@ -1,5 +1,3 @@
-<div data-hp-shopmy-title="XYZTitle" data-hp-shopmy-collectionid="123456"></div>
+<div data-hp-shopmy-title="Travel" data-hp-shopmy-collectionid="356233" data-hp-shopmy-embed-type="collection"></div>
 
-<div data-hp-shopmy-title="XYZTitle" data-hp-shopmy-collectionid="123456" data-hp-shopmy-embed-type="full"></div>
-
-<div data-hp-shopmy-title="XYZTitle" data-hp-shopmy-collectionid="123456" data-hp-shopmy-embed-type="carousel"></div>
+<div data-hp-shopmy-title="Travel" data-hp-shopmy-collectionid="356233" data-hp-shopmy-embed-type="carousel"></div>
