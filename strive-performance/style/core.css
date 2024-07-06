@@ -165,3 +165,8 @@ div.wm-tabs {
 }
 
 /*** END Section Loader ***/
+
+.header.shrink {
+  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(20px) !important;
+}
