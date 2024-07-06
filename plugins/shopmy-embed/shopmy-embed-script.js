@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
+    
+    // Assuming iframe is the reference to your iframe element
+    var iframe = document.getElementById('shopMyDiv'); // Replace 'myIframe' with your iframe's ID or querySelector
+    
+    // Adjust iframe height based on content
+    function resizeIframe() {
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+    
+    // Call resizeIframe() whenever the iframe content changes or after it's loaded
+    iframe.addEventListener('load', resizeIframe);
+
+    
     var shopmyDivs = document.querySelectorAll('[data-hp-shopmy-collectionid]');
     
     shopmyDivs.forEach(function(shopmyDiv) {
@@ -36,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Iframe SRC:", src);
         console.log("Iframe Style:", style);
 
-        var embedCode = '<iframe title="' + collectionTitle + '" src="' + src + '" style="' + style + '"></iframe>';
+        var embedCode = '<iframe id="shopMyDiv" title="' + collectionTitle + '" src="' + src + '" style="' + style + '"></iframe>';
         
         // Replace the content of the div with the generated embed code
         shopmyDiv.innerHTML = embedCode;
