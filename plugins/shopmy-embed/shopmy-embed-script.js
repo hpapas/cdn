@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     shopmyDivs.forEach(function(shopmyDiv) {
         var collectionId = shopmyDiv.getAttribute('data-hp-shopmy-collectionid');
         var collectionTitle = shopmyDiv.getAttribute('data-hp-shopmy-title');
-        var embedType = shopmyDiv.getAttribute('data-hp-shopmy-embed-type') || 'carousel'; // Default to 'carousel' if not specified
+        var embedType = shopmyDiv.getAttribute('data-hp-shopmy-embed-type'); // No default specified
         
         // Debug output
         console.log("Processing DIV with collectionId:", collectionId);
@@ -38,8 +38,11 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (embedType === 'carousel') {
             src = 'https://shopmy.us/collections/embed/' + collectionId + '?';
             style = 'width: 100%; min-height: 360px; border: none;';
-        } else {
+        } else if (embedType) {
             console.warn("Unknown embed type: ", embedType);
+            return; // Skip this div
+        } else {
+            console.warn("No embed type specified for:", shopmyDiv);
             return; // Skip this div
         }
 
@@ -53,4 +56,3 @@ document.addEventListener("DOMContentLoaded", function() {
         shopmyDiv.innerHTML = embedCode;
     });
 });
-
