@@ -1,1 +1,5 @@
 <div data-hp-shopmy-title="XYZTitle" data-hp-shopmy-collectionid="123456"></div>
+
+<div data-hp-shopmy-title="XYZTitle" data-hp-shopmy-collectionid="123456" data-hp-shopmy-embed="full"></div>
+
+<div data-hp-shopmy-title="XYZTitle" data-hp-shopmy-collectionid="123456" data-hp-shopmy-embed="carousel"></div>
