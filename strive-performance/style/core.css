@@ -127,6 +127,10 @@ div.wm-before-after-slider {
 
 /*** Tab Styles ***/
 
+div.wm-tabs {
+    --tab-button-border-radius: 0px !important;
+}
+
 .wm-tabs[data-navigation-type="horizontal"] {
   --nav-scrollbar-display: none;
   --tabs-header-gap: 0px;
@@ -138,6 +142,7 @@ div.wm-before-after-slider {
 
 .wm-tabs nav .tab-title {
     font-family: var(--body-font-font-family) !important;
+    font-weight: 700 !important;
 }
 
 /*** END Tab Styles ***/
