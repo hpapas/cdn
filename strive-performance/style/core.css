@@ -5,19 +5,11 @@
     src: url('https://hpapas-cdn.pages.dev/strive-performance/fonts/BebasNeue.otf') format("truetype");
 }
 
-@font-face {
-    font-family: "Paragraph";
-    src: url('https://hpapas-cdn.pages.dev/strive-performance/fonts/Avenir.ttf') format("truetype");
-}
-
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
 h1, h2, h3, h4, h5, h6 {
     font-family: "Heading" !important;
+    font-weight: 400 !important;
 }
-
-/* p, span, a {
-    font-family: "Paragraph" !important;
-} */
 
 .sqs-block-button-element {
     border-width: 0 !important;
