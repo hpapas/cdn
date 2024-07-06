@@ -136,6 +136,10 @@ div.wm-before-after-slider {
   flex-basis: ~'calc(100% / var(--tabs-count))';
 }
 
+.wm-tabs nav .tab-title {
+    font-family: var(--body-font-font-family) !important;
+}
+
 /*** END Tab Styles ***/
 
 /*** Footer ***/
