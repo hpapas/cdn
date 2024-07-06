@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    
     var shopmyDivs = document.querySelectorAll('[data-hp-shopmy-collectionid]');
     
     shopmyDivs.forEach(function(shopmyDiv) {
@@ -37,9 +36,22 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Iframe SRC:", src);
         console.log("Iframe Style:", style);
 
-        var embedCode = '<iframe title="' + collectionTitle + '" src="' + src + '" style="' + style + '"></iframe>';
+        var embedCode = '<iframe id="shopmyIframe_' + collectionId + '" title="' + collectionTitle + '" src="' + src + '" style="' + style + '"></iframe>';
         
         // Replace the content of the div with the generated embed code
         shopmyDiv.innerHTML = embedCode;
+
+        // Wait for the iframe to load and then adjust its height
+        var iframe = document.getElementById('shopmyIframe_' + collectionId);
+        if (iframe) {
+            iframe.addEventListener('load', function() {
+                resizeIframe(iframe);
+            });
+        }
     });
+
+    // Function to resize the iframe height based on its content
+    function resizeIframe(iframe) {
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
 });
