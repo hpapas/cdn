@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (embedType === 'full') {
             src = 'https://shopmy.us/collections/public/' + collectionId + '?noHeader=true';
             style = 'width: 100%; min-height: 1200px; border: none;';
-        } else if (embedType === 'collection') {
+        } else if (embedType === 'carousel') {
             src = 'https://shopmy.us/collections/embed/' + collectionId + '?';
             style = 'width: 100%; min-height: 360px; border: none;';
         } else {
