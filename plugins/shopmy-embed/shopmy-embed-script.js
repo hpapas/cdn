@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var src, style;
 
         if (embedType === 'full') {
-            src = 'https://shopmy.us/collections/collection/' + collectionId + '?noHeader=true';
+            src = 'https://shopmy.us/collections/public/' + collectionId + '?noHeader=true';
             style = 'width: 100%; min-height: 1200px; border: none;';
         } else if (embedType === 'collection') {
             src = 'https://shopmy.us/collections/embed/' + collectionId + '?';
