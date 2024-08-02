@@ -34,6 +34,7 @@
 #availability-indicator[data-availability="true"] .text::before {
   content: "Available Now";
   color: #fff;
+  font-weight: 700;
 }
 
 #availability-indicator[data-availability="false"] .dot {
@@ -43,4 +44,5 @@
 #availability-indicator[data-availability="false"] .text::before {
   content: "Booked Out";
   color: #fff;
+  font-weight: 700;
 }
