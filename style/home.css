@@ -50,15 +50,15 @@
 }
 
 #availability-indicator[data-position="center"] {
-   justify-content: center;
+   margin: 0 auto;
 }
 
 #availability-indicator[data-position="left"] {
-   justify-content: flex-start;
+   margin-right: auto;
 }
 
 #availability-indicator[data-position="right"] {
-   justify-content: flex-end;
+   margin-left: auto;
 }
 
 @keyframes pulse-true {
