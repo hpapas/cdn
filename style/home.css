@@ -49,6 +49,18 @@
    font-weight: 700;
 }
 
+#availability-indicator[data-position="center"] {
+   justify-content: center;
+}
+
+#availability-indicator[data-position="left"] {
+   justify-content: flex-start;
+}
+
+#availability-indicator[data-position="right"] {
+   justify-content: flex-end;
+}
+
 @keyframes pulse-true {
    0% {
       transform: scale(0.95);
