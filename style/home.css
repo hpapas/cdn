@@ -3,10 +3,8 @@
 }
 
 #block-yui_3_17_2_1_1722594541831_16374 h1 {
-   font-size: calc((var(--heading-3-size-value) - 1) * 1.2vw + 1rem) !important;
+   font-size: calc((var(--heading-3-size-value) - 1)* 1.2vw + 1rem) !important;
 }
-
-/* Availability Indicator Styles */
 
 #availability-indicator {
    display: flex;
@@ -16,7 +14,7 @@
    backdrop-filter: blur(4px);
    -webkit-backdrop-filter: blur(4px);
    border-radius: 50px;
-   padding: 10px 20px;
+   padding: 10px 20px 10px 20px;
 }
 
 #availability-indicator .dot {
@@ -29,7 +27,7 @@
 }
 
 #availability-indicator[data-availability="true"] .dot {
-   background-color: #90ee90; /* Light green */
+   background-color: #90ee90;
    animation: pulse-true 2s infinite;
 }
 
@@ -40,7 +38,7 @@
 }
 
 #availability-indicator[data-availability="false"] .dot {
-   background-color: #ff6347; /* Tomato red */
+   background-color: #ff6347;
    animation: pulse-false 2s infinite;
 }
 
@@ -50,38 +48,36 @@
    font-weight: 700;
 }
 
-/* Keyframes for pulse animations */
-
 @keyframes pulse-true {
    0% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(144, 238, 144, 0.7); /* Matches #90ee90 */
+      box-shadow: 0 0 0 0 rgba(144, 238, 144, 0.7);
    }
 
    70% {
       transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(144, 238, 144, 0); /* Matches #90ee90 */
+      box-shadow: 0 0 0 10px rgba(144, 238, 144, 0);
    }
 
    100% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(144, 238, 144, 0); /* Matches #90ee90 */
+      box-shadow: 0 0 0 0 rgba(144, 238, 144, 0);
    }
 }
 
 @keyframes pulse-false {
    0% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(255, 99, 71, 0.7); /* Matches #ff6347 */
+      box-shadow: 0 0 0 0 rgba(255, 99, 71, 0.7);
    }
 
    70% {
       transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(255, 99, 71, 0); /* Matches #ff6347 */
+      box-shadow: 0 0 0 10px rgba(255, 99, 71, 0);
    }
 
    100% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(255, 99, 71, 0); /* Matches #ff6347 */
+      box-shadow: 0 0 0 0 rgba(255, 99, 71, 0);
    }
 }
