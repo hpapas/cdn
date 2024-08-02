@@ -1,0 +1,7 @@
+.background-pause-button {
+  display: none !important;
+}
+
+#block-yui_3_17_2_1_1722594541831_16374 h1 {
+  font-size: calc((var(--heading-3-size-value) - 1)* 1.2vw + 1rem) !important;
+}
