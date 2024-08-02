@@ -43,7 +43,7 @@
 }
 
 #availability-indicator[data-availability="false"] .text::before {
-   content: "Booked Out";
+   content: "Not Available";
    color: #fff;
    font-weight: 700;
 }
