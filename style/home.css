@@ -33,7 +33,7 @@
 
 #availability-indicator[data-availability="true"] .text::before {
   content: "Available Now";
-  color: #333;
+  color: #fff;
 }
 
 #availability-indicator[data-availability="false"] .dot {
@@ -42,5 +42,5 @@
 
 #availability-indicator[data-availability="false"] .text::before {
   content: "Booked Out";
-  color: #333;
+  color: #fff;
 }
