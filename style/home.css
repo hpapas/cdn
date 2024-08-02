@@ -1,86 +1,83 @@
 .background-pause-button {
-	display: none !important;
+   display: none !important;
 }
 
 #block-yui_3_17_2_1_1722594541831_16374 h1 {
-	font-size: calc((var(--heading-3-size-value) - 1)* 1.2vw + 1rem) !important;
+   font-size: calc((var(--heading-3-size-value) - 1)* 1.2vw + 1rem) !important;
 }
 
 #availability-indicator {
-	display: flex;
-	align-items: center;
-	width: fit-content;
-	background: rgba(255, 255, 255, .2);
-	backdrop-filter: blur(4px);
-	-webkit-backdrop-filter: blur(4px);
-	border-radius: 50px;
-	padding: 10px 20px 10px 20px;
+   display: flex;
+   align-items: center;
+   width: fit-content;
+   background: rgba(255, 255, 255, .2);
+   backdrop-filter: blur(4px);
+   -webkit-backdrop-filter: blur(4px);
+   border-radius: 50px;
+   padding: 10px 20px 10px 20px;
 }
 
 #availability-indicator .dot {
-	margin-right: 10px;
-	width: 15px;
-	height: 15px;
-	border-radius: 50%;
-	transform: scale(1);
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-
+   margin-right: 10px;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   transform: scale(1);
+   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 }
 
 #availability-indicator[data-availability="true"] .dot {
-	background-color: #90ee90;
-	animation: pulse-true 2s infinite;
+   background-color: #90ee90;
+   animation: pulse-true 2s infinite;
 }
 
 #availability-indicator[data-availability="true"] .text::before {
-	content: "Available Now";
-	color: #fff;
-	font-weight: 700;
+   content: "Available Now";
+   color: #fff;
+   font-weight: 700;
 }
 
 #availability-indicator[data-availability="false"] .dot {
-	background-color: red;
-	animation: pulse-false 2s infinite;
+   background-color: red;
+   animation: pulse-false 2s infinite;
 }
 
 #availability-indicator[data-availability="false"] .text::before {
-	content: "Booked Out";
-	color: #fff;
-	font-weight: 700;
+   content: "Booked Out";
+   color: #fff;
+   font-weight: 700;
 }
 
 @keyframes pulse-true {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(144, 238, 144, 0.7);
-		/* Matches #90ee90 */
-	}
+   0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(144, 238, 144, 0.7);
+   }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(144, 238, 144, 0);
-		/* Matches #90ee90 */
-	}
+   70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(144, 238, 144, 0);
+   }
 
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(144, 238, 144, 0);
-		/* Matches #90ee90 */
-	}
+   100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(144, 238, 144, 0);
+   }
 }
 
 @keyframes pulse-false {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
-		/* Matches standard red */
-	}
+   0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+   }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
-		/* Matches standard red */
-	}
+   70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+   }
 
-	100% {
-		transfo
+   100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+   }
+}
