@@ -5,3 +5,6 @@
 #block-yui_3_17_2_1_1722594541831_16374 h1 {
    font-size: calc((var(--heading-3-size-value) - 1)* 1.2vw + 1rem) !important;
 }
+
+section[data-section-id="66ab7d03ddb0787337e8b01a"] .sqs-block-image-link:hover {
+}
