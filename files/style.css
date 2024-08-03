@@ -4,3 +4,165 @@ body:not(.sqs-edit-mode-active) {
     opacity:0;
   }
 }
+
+/*** CORE TEXT STYLE CSS ***/
+
+p a { text-decoration: underline; }
+
+/*** END CORE TEXT STYLE CSS ***/
+
+/*** PORTFOLIO GALLERY BLOCK WHITESPACE FIX***/
+
+@media (min-width: 768px) {
+  .fe-6598b9108382fb2d83ba779a,
+  .fe-6598bc086af959468089ad2d,
+  .fe-6598d01522fca02b33fd8b96,
+  .fe-6598d18e85e54a45c1242208,
+  .fe-6598d2b185e54a45c12452a7,
+  .fe-6598d5cc735c7b5b9f8cb98c,
+  .fe-6598d67777e65d69ba552f8b,
+  .fe-6598d6ffe16d2e7150ab4f90,
+  .fe-65ecfa29bc83f640dc35ea11,
+  .fe-66069d1495e1260c0ecbe346 {
+    --row-height-scaling-factor: 0 !important;
+  }
+}
+
+/*** END PORTFOLIO GALLERY BLOCK WHITESPACE FIX***/
+
+/*** HIDE ITEM PAGINATION ***/
+
+#itemPagination {
+  display: none;
+}
+
+/*** END HIDE ITEM PAGINATION ***/
+
+/*** BLOG CUSTOMISATIONS ***/
+
+.blog-item-title h1 {
+  font-size: 35px !important;
+}
+
+.blog-meta-item--date {
+  margin-top: 15px;
+}
+
+.blog-basic-grid .blog-more-link {
+  font-size: 15px !important;
+  padding-top: 0 !important;
+}
+
+.sqs-block-archive .archive-block-setting-layout-dropdown.archive-block-wrapper {
+  max-width: 100% !important;
+}
+
+.blog-basic-grid .blog-article-spacer {
+  height: 30px !important;
+}
+
+.blog-basic-grid .blog-title {
+  margin-bottom: 15px !important;
+}
+
+/*** END BLOG CUSTOMISATIONS ***/
+
+/*** REMOVE NAV BLUR ON HOME ***/
+
+.homepage .header-blur-background {
+  display: none !important;
+}
+
+/*** END REMOVE NAV BLUR ON HOME ***/
+
+/*** NAV LINK HOVER ***/
+
+.header-nav-item a:hover {
+  background-image: linear-gradient(currentColor,currentColor);
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-position: 0 calc(100% - 0.1em);
+}
+
+/*** END NAV LINK HOVER ***/
+
+/*** TAB STYLES ***/
+
+div.wm-tabs {
+  --tab-button-padding-y: 20px;
+  --tab-button-padding-x: 18px;
+  --tab-button-font-size: 18px;
+  --tab-button-font-weight: inherit;
+  --tab-button-border-radius: 0px;
+  --tab-button-border-width: 0px;
+  --tab-button-border-color: currentColor;
+  --tab-button-background: #fff;
+  --tab-button-color: currentColor;
+
+  /*Hover State*/
+  --tab-button-hover-opacity: 0.6;
+
+  /*Active State*/
+  --tab-button-active-font-weight: inherit;
+  --tab-button-active-border-color: currentColor;
+  --tab-button-active-background: transparent;
+  --tab-button-active-color: ~'hsla(var(--wm-accent-inverse-hsl), 1)';
+
+  /*Active Indicator*/
+  --tab-indicator-display: block;
+  --tab-indicator-track-background: transparent;
+  --tab-indicator-track-height: 100%;
+  --active-indicator-color: ~'hsla(var(--wm-accent-hsl), 1)';
+  --active-indicator-border-radius: 0;
+
+}
+
+.wm-tabs[data-navigation-type=horizontal]>*>.tabs-header {
+  border: none !important;
+}
+
+/*** Full Width Tabs ***/
+
+.wm-tabs[data-navigation-type="horizontal"] {
+  --nav-scrollbar-display: none;
+  --tabs-header-gap: 0px;
+}
+.wm-tabs[data-navigation-type="horizontal"] .tabs-header nav button {
+  flex-grow: 1;
+  flex-basis: ~'calc(100% / var(--tabs-count))';
+}
+
+/*** End Full Width Tabs ***/
+
+/*** END TAB STYLES ***/
+
+/*** ACCORDION WIDTH ***/
+
+.accordion-item__description {
+  max-width: 100% !important;
+}
+
+/*** END ACCORDION WIDTH ***/
+
+.list-item-content__description {
+  font-size: 15px !important;
+}
+
+/*** ANIMATED SCROLLING LOGO CAROUSEL ***/
+
+:root { 
+  --logoanimspeed: 80s; 
+  --scrolldirection: normal;
+  //desktop styles
+  --desklogoheight: 60px;
+  --desklogospacing: 80px;
+  --desktitlespacing: 50px;
+  //mobile styles
+  --mobilelogoheight: 50px;
+  --mobilelogospacing: 10px;
+  --mobiletitlespacing: 30px;
+}
+
+#siteWrapper .user-items-list[data-space-below-section-title-value="92"]{overflow:hidden;min-height:unset!important;.user-items-list-simple{display:flex;flex-wrap:nowrap;align-items:center;width:fit-content!important;margin:0!important;grid-gap:0!important}&[data-animated="true"] .user-items-list-simple{transform:translate3d(0,0,0);animation:logo-anim var(--logoanimspeed) linear var(--scrolldirection) infinite;transform-style:preserve-3d;padding:0!important}.list-section-title{padding-bottom:var(--desktitlespacing)!important}.list-item{margin-right:var(--desklogospacing)!important;opacity:1!important;background-color:transparent!important;padding:0!important}.list-item-media{margin:0!important;width:100%!important}.list-item-media-inner{padding:0!important;height:unset!important;opacity:1!important;transform:translate3d(0,0,0);clip-path:none!important;animation:none!important;transition:none!important;transition-timing-function: unset!important;transition-duration: unset!important;background-size:contain;background-repeat:no-repeat}.list-item img{transform:translate3d(0,0,0);position:relative!important;width:auto!important;height:var(--desklogoheight)!important;top:0!important;left:0!important;display:block;opacity:0!important}@media screen and (max-width:767px){.list-section-title{padding-bottom:var(--mobiletitlespacing)!important}.list-item{margin-right:var(--mobilelogospacing)!important}.list-item img{height:var(--mobilelogoheight)!important}}}.logo-gradient{mask-image:linear-gradient(to right,transparent 0%,#000 15%,#000 85%,transparent 100%);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 15%,#000 85%,transparent 100%)}@keyframes logo-anim{to{transform:translate3d(-50%,0,0)}}
+
+/*** END ANIMATED SCROLLING LOGO CAROUSEL ***/
