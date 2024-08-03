@@ -1,7 +1,6 @@
 <script>
 
 
-<script>
   $(document).ready(function() {
     console.log('Document is ready');
     async function updateAvailability() {
@@ -35,4 +34,4 @@
 </script>
 
 
-</script>
+
