@@ -1,7 +1,7 @@
 <script>
 
 async function updateAvailability() {
-    const response = await fetch('https://raw.githubusercontent.com/your-username/your-repo/main/availability.json');
+    const response = await fetch('https://cdn.hpapas.au/plugins/availability-indicator/availability.json');
     const data = await response.json();
     const availability = data.availability;
 
