@@ -1,0 +1,10 @@
+<style>
+
+/*** COUNT UP ANIMATION CSS ***/
+body:not(.sqs-edit-mode-active) {
+  a[href="#wm-countup"] {
+    opacity:0;
+  }
+}
+  
+</style>
