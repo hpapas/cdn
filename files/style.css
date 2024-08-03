@@ -1,9 +1,12 @@
 /*** COUNT UP ANIMATION CSS ***/
+
 body:not(.sqs-edit-mode-active) {
   a[href="#wm-countup"] {
     opacity:0;
   }
 }
+
+/*** END COUNT UP ANIMATION CSS ***/
 
 /*** CORE TEXT STYLE CSS ***/
 
