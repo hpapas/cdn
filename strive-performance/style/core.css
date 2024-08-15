@@ -176,3 +176,8 @@ section[data-section-id="66bdf4ff903cbf0b58909d79"] p {
     font-family: "Heading" !important;
     font-weight: 400 !important;
 }
+
+
+section[data-section-id="66bdf4ff903cbf0b58909d79"] .user-items-list-carousel .list-item[data-is-card-enabled="true"] {
+    background: hsla(var(--black-hsl), 0.32) !important;
+}
