@@ -12,7 +12,9 @@
       };
       const now = new Date();
       const formattedDate = now.toLocaleString('en-AU', options);
-      document.getElementById('current-time').innerText = formattedDate;
+      // Append the time zone to the formatted date
+      const timeZoneDisplay = timeZone.replace('_', ' '); // Replace underscores with spaces for better readability
+      document.getElementById('current-time').innerText = `${formattedDate} (${timeZoneDisplay})`;
     }
     // Fetch the time zone from the CDN URL
     fetch('https://cdn.harrypapas.com/plugins/date-and-time/timezone.json')
