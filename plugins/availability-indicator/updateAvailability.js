@@ -11,6 +11,6 @@
       console.error('Error fetching availability:', error);
     }
   }
-
-  document.addEventListener("DOMContentLoaded", updateAvailability);
+  
+document.addEventListener("DOMContentLoaded", updateAvailability);
 </script>
