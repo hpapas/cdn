@@ -12,5 +12,5 @@
     }
   }
   
-document.addEventListener("DOMContentLoaded", updateAvailability);
+  document.addEventListener("DOMContentLoaded", updateAvailability);
 </script>
