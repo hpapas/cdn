@@ -3,7 +3,7 @@
   async function updateAvailability() {
     try {
       // URL of your JSON file hosted on GitHub
-      const response = await fetch('https://raw.githubusercontent.com/your-username/repository-name/branch-name/availability.json');
+      const response = await fetch('https://cdn.harrypapas.com/plugins/availability-indicator/availability.json');
       const data = await response.json();
 
       // Select the availability-indicator div
