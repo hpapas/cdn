@@ -11,14 +11,6 @@ async function updateAvailability() {
     // Update the data-availability attribute based on the fetched data
     availabilityIndicator.setAttribute('data-availability', data.availability);
 
-    // Optionally, you can also update any text or styles inside the element if necessary
-    const text = availabilityIndicator.querySelector('.text');
-    if (data.availability) {
-      text.textContent = 'Available';
-    } else {
-      text.textContent = 'Not Available';
-    }
-
   } catch (error) {
     console.error('Error fetching availability:', error);
   }
