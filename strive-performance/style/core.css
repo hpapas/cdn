@@ -174,17 +174,17 @@ div.wm-tabs {
 
 /*** HOME SERVICES CAROUSEL ***/
 
-section[data-section-id="66bdf4ff903cbf0b58909d79"] .list-section-title p {
+#home-how-it-works .list-section-title p {
     font-family: "Heading" !important;
     font-weight: 400 !important;
 }
 
-section[data-section-id="66bdf4ff903cbf0b58909d79"] .user-items-list-carousel .list-item[data-is-card-enabled="true"] {
+#home-how-it-works .user-items-list-carousel .list-item[data-is-card-enabled="true"] {
     background: hsla(var(--black-hsl), 0.32) !important;
 }
 
-section[data-section-id="66bdf4ff903cbf0b58909d79"] .list-item-content__title,
-section[data-section-id="66bdf4ff903cbf0b58909d79"] .list-item-content__description p {
+#home-how-it-works .list-item-content__title,
+#home-how-it-works .list-item-content__description p {
     color: #fff !important;
 }
 
