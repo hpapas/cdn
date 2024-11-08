@@ -174,17 +174,17 @@ div.wm-tabs {
 
 /*** HOME SERVICES CAROUSEL ***/
 
-#home-how-it-works .list-section-title p {
+#home-services .list-section-title p {
     font-family: "Heading" !important;
     font-weight: 400 !important;
 }
 
-#home-how-it-works .user-items-list-carousel .list-item[data-is-card-enabled="true"] {
+#home-services .user-items-list-carousel .list-item[data-is-card-enabled="true"] {
     background: hsla(var(--black-hsl), 0.32) !important;
 }
 
-#home-how-it-works .list-item-content__title,
-#home-how-it-works .list-item-content__description p {
+#home-services .list-item-content__title,
+#home-services .list-item-content__description p {
     color: #fff !important;
 }
 
