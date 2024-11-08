@@ -174,7 +174,8 @@ div.wm-tabs {
 
 /*** HOME SERVICES CAROUSEL ***/
 
-#home-services .list-section-title p {
+#home-services .list-section-title p,
+#home-how-it-works .list-section-title p {
     font-family: "Heading" !important;
     font-weight: 400 !important;
 }
