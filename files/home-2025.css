@@ -3,7 +3,7 @@
 }
 
 #home-2025-content .sqs-block-accordion .accordion-item[data-is-open="true"] .arrow-container {
-  transform: rotate(270deg);
+  transform: rotate(0deg);
 }
 
 #home-2025-content .sqs-block-accordion .accordion-item__dropdown--open {
