@@ -1,3 +1,5 @@
+/*** PORTFOLIO PAGE STYLING ***/
+
 .portfolio-meta {
   display: flex;
   justify-content: space-between; /* Adds space between boxes */
@@ -28,3 +30,34 @@
     width: auto; /* Full width on mobile */
   }
 }
+
+/*** END PORTFOLIO PAGE STYLING ***/
+
+/*** PORTFOLIO FILTER LINKS ***/
+
+.portfolio-filter span {
+   cursor: pointer;
+   padding: 10px;
+   display: inline-block;
+    margin: 5px;
+}
+.portfolio-filter span.active {
+   text-decoration: underline;
+}
+a.grid-item.hidden {
+   display: none;
+}
+div#gridThumbs {
+    padding-top: 20px;
+}
+.portfolio-filter {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  text-align: center;
+  display: none;
+}
+.content .portfolio-filter {
+  display: block;
+}
+
+/*** END PORTFOLIO FILTER LINKS ***/
