@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let category = "";
 
             // Assign categories based on URL patterns
-            if (url.includes("the-local-guys-business-show")) {
+            if (url.includes("/the-local-guys-business-show")) {
                 category = "podcast";
             } else if (url.includes("/web-design")) {
                 category = "web-design";
