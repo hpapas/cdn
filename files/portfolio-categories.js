@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Document is fully loaded.");
 
     // Loop through all portfolio items inside #gridThumbs and assign categories based on URL patterns
-    document.querySelectorAll("#gridThumbs").forEach(item => {
+    document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
         let link = item.querySelector("a"); // Find the first <a> tag inside the item
 
         if (link) {
@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("URL for item:", url); // Log the URL of the item
 
             // Assign categories based on URL patterns
-            
             if (url.includes("the-local-guys-business-show")) { categories.push("podcast", "video"); }
             if (url.includes("flambouro-philanthropic-society-squarespace-rebuild")) { categories.push("web"); }
             if (url.includes("studio-omnia")) { categories.push("web"); }
