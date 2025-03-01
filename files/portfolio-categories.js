@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Assign categories based on the portfolio item URL
-    document.querySelectorAll(".summary-item").forEach(item => {
+    document.querySelectorAll(".grid-item).forEach(item => {
         let link = item.querySelector("a"); // Find the first <a> tag inside the item
 
         if (link) {
