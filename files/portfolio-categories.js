@@ -41,14 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
         // If there's no hash or hash is 'all', show all items
         if (!hash || hash === "all") {
             console.log("Showing all items.");
-            document.querySelectorAll(".grid-item").forEach(item => {
+            document.querySelectorAll("#gridThumbs").forEach(item => {
                 item.style.display = "block"; // Show all items
                 console.log("Showing item:", item); // Log which item is shown
             });
         } else {
             // Filter items based on the hash value
             console.log(`Filtering items by category: ${hash}`);
-            document.querySelectorAll(".grid-item").forEach(item => {
+            document.querySelectorAll("#gridThumbs").forEach(item => {
                 let link = item.querySelector("a");
                 let category = link ? link.getAttribute("data-category") : "";
                 console.log("Item category:", category); // Log category of each item
