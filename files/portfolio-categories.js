@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Document is fully loaded.");
 
-    // Loop through all portfolio items (summary-item)
+    // Loop through all portfolio items and assign categories based on URL patterns
     document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
         let link = item.querySelector("a"); // Find the first <a> tag inside the item
 
@@ -33,25 +33,43 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Filtering Functionality
-    document.querySelectorAll(".portfolio-filter span").forEach(button => {
-        button.addEventListener("click", function () {
-            let filter = this.getAttribute("data-filter");
-            console.log("Clicked filter:", filter); // Log which filter is clicked
-
+    // Function to filter portfolio items based on hash in URL
+    function filterPortfolio() {
+        let hash = window.location.hash.substring(1); // Get the part of the URL after #
+        console.log("Current hash:", hash); // Log the hash value
+        
+        // If there's no hash, show all items
+        if (!hash || hash === "all") {
+            console.log("Showing all items.");
+            document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
+                item.style.display = "block"; // Show all items
+                console.log("Showing item:", item); // Log which item is shown
+            });
+        } else {
+            // Filter items based on the hash value
+            console.log(`Filtering items by category: ${hash}`);
             document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
                 let link = item.querySelector("a");
                 let category = link ? link.getAttribute("data-category") : "";
                 console.log("Item category:", category); // Log category of each item
 
-                if (filter === "all" || (category && category.includes(filter))) {
-                    item.style.display = "block";
+                if (category && category === hash) {
+                    item.style.display = "block"; // Show matching items
                     console.log("Showing item:", item); // Log which item is shown
                 } else {
-                    item.style.display = "none";
+                    item.style.display = "none"; // Hide non-matching items
                     console.log("Hiding item:", item); // Log which item is hidden
                 }
             });
-        });
+        }
+    }
+
+    // Call filterPortfolio on page load based on the current URL hash
+    filterPortfolio();
+
+    // Listen for changes to the URL hash and update the portfolio display accordingly
+    window.addEventListener("hashchange", function () {
+        console.log("Hash changed. New hash:", window.location.hash); // Log when the hash changes
+        filterPortfolio();
     });
 });
