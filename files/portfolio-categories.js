@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Document is fully loaded.");
 
-    // Loop through all grid items within #gridThumbs and assign categories based on URL patterns
-    document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
+    // Loop through all items inside #gridThumbs and assign categories based on URL patterns
+    document.querySelectorAll("#gridThumbs").forEach(item => {
         let link = item.querySelector("a"); // Find the first <a> tag inside the item
 
         if (link) {
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 let category = link ? link.getAttribute("data-category") : "";
                 console.log("Item category:", category); // Log category of each item
 
-                // If category matches the hash, show it. Otherwise, hide it.
-                if (category === hash) {
+                // Check if the category matches the hash and update display accordingly
+                if (category && category === hash) {
                     item.style.display = "block"; // Show matching items
                     console.log("Showing item:", item); // Log which item is shown
                 } else {
