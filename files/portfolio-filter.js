@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
         
         if (url.includes("foxden-bb")) { categories.push("web"); }
         if (url.includes("drssa-bill-buster-lottery-flyer-poster")) { categories.push("design"); }
-        
+        if (url.includes("drssa-wheelchair-footy-promo-video")) { categories.push("video"); }
+        if (url.includes("drssa-donation-emails")) { categories.push("design"); }
 
         console.log("Assigned categories:", categories); // Log the assigned categories
 
