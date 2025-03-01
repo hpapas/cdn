@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Assign categories based on URL patterns
         if (url.includes("the-local-guys-business-show")) { categories.push("podcast", "video"); }
-        if (url.includes("flambouro-philanthropic-society-squarespace-rebuild")) { categories.push("web"); }
+        if (url.includes("flambouro-philanthropic-society-squarespace-rebuild")) { categories.push("test2"); }
         if (url.includes("studio-omnia")) { categories.push("web"); }
         if (url.includes("hair-by-rosy-logo-stationery")) { categories.push("design"); }
         if (url.includes("ortc-clothing-co-email-facebook-ad-design-concept")) { categories.push("design"); }
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (url.includes("smart-kettle-app-concept")) { categories.push("design"); }
         if (url.includes("logo-agency-portfolio")) { categories.push("design"); }
         if (url.includes("web-agency-portfolio")) { categories.push("web"); }
-        if (url.includes("flambouro-philanthropic-society") && !url.includes("squarespace-rebuild")) { categories.push("web"); }
+        if (url.includes("flambouro-philanthropic-society") && !url.includes("squarespace-rebuild")) { categories.push("test"); }
         if (url.includes("disability-recreation-sports-sa-wordpress-rebuild")) { categories.push("web"); }
         if (url.includes("foxden-bb")) { categories.push("web"); }
         if (url.includes("drssa-bill-buster-lottery-flyer-poster")) { categories.push("design"); }
