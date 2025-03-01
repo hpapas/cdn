@@ -1,3 +1,23 @@
+// Define the filterPortfolio function outside the event listener so it's accessible globally
+function filterPortfolio(filterText) {
+    console.log('Filtering for: ' + filterText); // Log the filter action
+
+    // Loop through each portfolio item and check its data-category
+    document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
+        let link = item.querySelector("a");
+        let category = link ? link.getAttribute("data-category") : "";
+        console.log('Item category:', category); // Log category of each item
+
+        if (filterText === "all" || (category && category.includes(filterText))) {
+            item.style.display = "block"; // Show matching items
+            console.log('Showing item:', item);
+        } else {
+            item.style.display = "none"; // Hide non-matching items
+            console.log('Hiding item:', item);
+        }
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Document is fully loaded.");
 
@@ -33,29 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Function to filter portfolio items based on category
-    function filterPortfolio(filterText) {
-        console.log("Filtering for:", filterText);
-
-        // Loop through each portfolio item and check its data-category
-        document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
-            let link = item.querySelector("a");
-            let category = link ? link.getAttribute("data-category") : "";
-            console.log("Item category:", category); // Log category of each item
-
-            if (filterText === "all" || (category && category.includes(filterText))) {
-                item.style.display = "block"; // Show matching items
-                console.log("Showing item:", item);
-            } else {
-                item.style.display = "none"; // Hide non-matching items
-                console.log("Hiding item:", item);
-            }
-        });
-    }
-
-    // Run the filterPortfolio function based on the URL hash
+    // Function to check the URL hash and filter the items on page load
     function checkHash() {
         var hash = window.location.hash.substring(1); // Get the hash without the "#"
+        console.log('Current hash:', hash);
         if (hash) {
             filterPortfolio(hash); // Call the filtering function with the hash
         } else {
