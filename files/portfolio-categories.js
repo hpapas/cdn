@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             let filter = this.getAttribute("data-filter");
 
-            document.querySelectorAll(".summary-item").forEach(item => {
+            document.querySelectorAll("#gridThumbs").forEach(item => {
                 let link = item.querySelector("a");
                 let category = link ? link.getAttribute("data-category") : "";
 
