@@ -1,34 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Document is fully loaded.");
 
-    // Loop through all items inside #gridThumbs and assign categories based on URL patterns
+    // Loop through all portfolio items inside #gridThumbs and assign categories based on URL patterns
     document.querySelectorAll("#gridThumbs").forEach(item => {
         let link = item.querySelector("a"); // Find the first <a> tag inside the item
 
         if (link) {
             let url = link.href.toLowerCase(); // Get URL and convert to lowercase
-            let category = "";
+            let categories = []; // Create an array to store multiple categories
             console.log("URL for item:", url); // Log the URL of the item
 
             // Assign categories based on URL patterns
-            if (url.includes("the-local-guys-business-show")) {
-                category = "podcast";
-            } else if (url.includes("/web-design")) {
-                category = "web-design";
-            } else if (url.includes("/branding")) {
-                category = "branding";
-            } else if (url.includes("/illustration")) {
-                category = "illustration";
-            } else if (url.includes("/graphic-design")) {
-                category = "graphic-design";
-            }
+            if (url.includes("the-local-guys-business-show")) { categories.push("podcast", "video"); }
+            if (url.includes("/web-design")) { categories.push("web-design"); }
+            if (url.includes("/branding")) { categories.push("branding"); }
+            if (url.includes("/illustration")) { categories.push("illustration"); }
+            if (url.includes("/graphic-design")) { categories.push("graphic-design"); }
 
-            console.log("Assigned category:", category); // Log the assigned category
+            console.log("Assigned categories:", categories); // Log the assigned categories
 
-            // Apply data-category to <a> tag if category is found
-            if (category) {
-                link.setAttribute("data-category", category);
-                console.log(`Set data-category="${category}" on link:`, link); // Log when data-category is set
+            // Apply data-category to <a> tag if categories are found
+            if (categories.length > 0) {
+                // Join the categories array into a single string separated by commas
+                link.setAttribute("data-category", categories.join(","));
+                console.log(`Set data-category="${categories.join(",")}" on link:`, link); // Log when data-category is set
             }
         }
     });
@@ -41,20 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
         // If there's no hash or hash is 'all', show all items
         if (!hash || hash === "all") {
             console.log("Showing all items.");
-            document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
+            document.querySelectorAll(".grid-item").forEach(item => {
                 item.style.display = "block"; // Show all items
                 console.log("Showing item:", item); // Log which item is shown
             });
         } else {
             // Filter items based on the hash value
             console.log(`Filtering items by category: ${hash}`);
-            document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
+            document.querySelectorAll(".grid-item").forEach(item => {
                 let link = item.querySelector("a");
-                let category = link ? link.getAttribute("data-category") : "";
-                console.log("Item category:", category); // Log category of each item
+                let categories = link ? link.getAttribute("data-category") : "";
+                console.log("Item categories:", categories); // Log categories of each item
 
                 // Check if the category matches the hash and update display accordingly
-                if (category && category === hash) {
+                if (categories && categories.split(',').includes(hash)) {
                     item.style.display = "block"; // Show matching items
                     console.log("Showing item:", item); // Log which item is shown
                 } else {
