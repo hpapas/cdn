@@ -11,17 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("URL for item:", url); // Log the URL of the item
 
             // Assign categories based on URL patterns
-            if (url.includes("the-local-guys-business-show")) {
-                category = "podcast";
-            } else if (url.includes("/web-design")) {
-                category = "web-design";
-            } else if (url.includes("/branding")) {
-                category = "branding";
-            } else if (url.includes("/illustration")) {
-                category = "illustration";
-            } else if (url.includes("/graphic-design")) {
-                category = "graphic-design";
-            }
+            if (url.includes("the-local-guys-business-show")) { category = "podcast"; }
+            else if (url.includes("/web-design")) { category = "web-design"; }
+            else if (url.includes("/branding")) { category = "branding"; }
+            else if (url.includes("/illustration")) { category = "illustration"; }
+            else if (url.includes("/graphic-design")) { category = "graphic-design"; }
 
             console.log("Assigned category:", category); // Log the assigned category
 
