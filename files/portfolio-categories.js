@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Document is fully loaded.");
 
     // Loop through all portfolio items (summary-item)
-    document.querySelectorAll("#gridThumbs").forEach(item => {
+    document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
         let link = item.querySelector("a"); // Find the first <a> tag inside the item
 
         if (link) {
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let filter = this.getAttribute("data-filter");
             console.log("Clicked filter:", filter); // Log which filter is clicked
 
-            document.querySelectorAll("#gridThumbs").forEach(item => {
+            document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
                 let link = item.querySelector("a");
                 let category = link ? link.getAttribute("data-category") : "";
                 console.log("Item category:", category); // Log category of each item
