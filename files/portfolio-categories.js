@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Document is fully loaded.");
 
     // Loop through all portfolio items and assign categories based on URL patterns
-    document.querySelectorAll("#gridThumb").forEach(item => {
+    document.querySelectorAll("#gridThumbs").forEach(item => {
         let link = item.querySelector("a"); // Find the first <a> tag inside the item
 
         if (link) {
@@ -41,14 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
         // If there's no hash, show all items
         if (!hash || hash === "all") {
             console.log("Showing all items.");
-            document.querySelectorAll("#gridThumb").forEach(item => {
+            document.querySelectorAll("#gridThumbs").forEach(item => {
                 item.style.display = "block"; // Show all items
                 console.log("Showing item:", item); // Log which item is shown
             });
         } else {
             // Filter items based on the hash value
             console.log(`Filtering items by category: ${hash}`);
-            document.querySelectorAll("#gridThumb").forEach(item => {
+            document.querySelectorAll("#gridThumbs").forEach(item => {
                 let link = item.querySelector("a");
                 let category = link ? link.getAttribute("data-category") : "";
                 console.log("Item category:", category); // Log category of each item
