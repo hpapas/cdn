@@ -27,21 +27,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Filtering Functionality
-    document.querySelectorAll(".filter-buttons button").forEach(button => {
-        button.addEventListener("click", function () {
-            let filter = this.getAttribute("data-filter");
-
-            document.querySelectorAll(".summary-item").forEach(item => {
-                let link = item.querySelector("a");
-                let category = link ? link.getAttribute("data-category") : "";
-
-                if (filter === "all" || (category && category.includes(filter))) {
-                    item.style.display = "block";
-                } else {
-                    item.style.display = "none";
-                }
-            });
-        });
-    });
 });
