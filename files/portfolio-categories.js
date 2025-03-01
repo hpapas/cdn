@@ -1,28 +1,8 @@
-// Define the filterPortfolio function outside the event listener so it's accessible globally
-function filterPortfolio(filterText) {
-    console.log('Filtering for: ' + filterText); // Log the filter action
-
-    // Loop through each portfolio item and check its data-category
-    document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
-        let link = item.querySelector("a");
-        let category = link ? link.getAttribute("data-category") : "";
-        console.log('Item category:', category); // Log category of each item
-
-        if (filterText === "all" || (category && category.includes(filterText))) {
-            item.style.display = "block"; // Show matching items
-            console.log('Showing item:', item);
-        } else {
-            item.style.display = "none"; // Hide non-matching items
-            console.log('Hiding item:', item);
-        }
-    });
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Document is fully loaded.");
 
-    // Loop through all portfolio items (grid-items)
-    document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
+    // Loop through all portfolio items (summary-item)
+    document.querySelectorAll("#gridThumbs").forEach(item => {
         let link = item.querySelector("a"); // Find the first <a> tag inside the item
 
         if (link) {
@@ -34,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (url.includes("the-local-guys-business-show")) {
                 category = "podcast";
             } else if (url.includes("/web-design")) {
-                category = "web";
+                category = "web-design";
             } else if (url.includes("/branding")) {
                 category = "branding";
             } else if (url.includes("/illustration")) {
@@ -53,20 +33,25 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Function to check the URL hash and filter the items on page load
-    function checkHash() {
-        var hash = window.location.hash.substring(1); // Get the hash without the "#"
-        console.log('Current hash:', hash);
-        if (hash) {
-            filterPortfolio(hash); // Call the filtering function with the hash
-        } else {
-            filterPortfolio('all'); // Default filter is "all"
-        }
-    }
+    // Filtering Functionality
+    document.querySelectorAll(".portfolio-filter span").forEach(button => {
+        button.addEventListener("click", function () {
+            let filter = this.getAttribute("data-filter");
+            console.log("Clicked filter:", filter); // Log which filter is clicked
 
-    // Run the checkHash function on page load
-    checkHash();
+            document.querySelectorAll("#gridThumbs").forEach(item => {
+                let link = item.querySelector("a");
+                let category = link ? link.getAttribute("data-category") : "";
+                console.log("Item category:", category); // Log category of each item
 
-    // Run on hashchange event (when the URL hash changes)
-    window.addEventListener('hashchange', checkHash);
+                if (filter === "all" || (category && category.includes(filter))) {
+                    item.style.display = "block";
+                    console.log("Showing item:", item); // Log which item is shown
+                } else {
+                    item.style.display = "none";
+                    console.log("Hiding item:", item); // Log which item is hidden
+                }
+            });
+        });
+    });
 });
