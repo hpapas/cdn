@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Document is fully loaded.");
 
     // Loop through all portfolio items and assign categories based on URL patterns
-    document.querySelectorAll("#gridThumbs").forEach(item => {
+    document.querySelectorAll(".grid-item").forEach(item => {
         let link = item.querySelector("a"); // Find the first <a> tag inside the item
 
         if (link) {
@@ -11,11 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("URL for item:", url); // Log the URL of the item
 
             // Assign categories based on URL patterns
-            if (url.includes("the-local-guys-business-show")) { category = "podcast"; }
-            else if (url.includes("/web-design")) { category = "web-design"; }
-            else if (url.includes("/branding")) { category = "branding"; }
-            else if (url.includes("/illustration")) { category = "illustration"; }
-            else if (url.includes("/graphic-design")) { category = "graphic-design"; }
+            if (url.includes("the-local-guys-business-show")) {
+                category = "podcast";
+            } else if (url.includes("/web-design")) {
+                category = "web-design";
+            } else if (url.includes("/branding")) {
+                category = "branding";
+            } else if (url.includes("/illustration")) {
+                category = "illustration";
+            } else if (url.includes("/graphic-design")) {
+                category = "graphic-design";
+            }
 
             console.log("Assigned category:", category); // Log the assigned category
 
@@ -47,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 let category = link ? link.getAttribute("data-category") : "";
                 console.log("Item category:", category); // Log category of each item
 
-                // Check if the category matches the hash and update display accordingly
-                if (category && category === hash) {
+                // If category matches the hash, show it. Otherwise, hide it.
+                if (category === hash) {
                     item.style.display = "block"; // Show matching items
                     console.log("Showing item:", item); // Log which item is shown
                 } else {
