@@ -1,0 +1,62 @@
+/*** PORTFOLIO PAGE STYLING ***/
+
+.portfolio-meta {
+	display: flex;
+	justify-content: space-between;
+ /* Adds space between boxes */
+	flex-wrap: wrap;
+ /* Prevents wrapping to the next line */
+	gap: 16px;
+ /* Adjusts space between boxes */;
+}
+
+.portfolio-meta > div {
+	flex: 1 1 calc(50% - 16px);
+ /* Makes each box 50% width, minus the gap */
+	padding: 20px;
+	background-color: #F0F0F0;
+}
+
+.portfolio-meta > div > span {
+	font-weight: 600 !important;
+	font-family: Urbanist !important;
+	font-size: 20px !important;
+}
+
+.portfolio-meta p {
+	margin-bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+	.portfolio-meta {
+		flex-direction: column;
+ /* Stack vertically */
+		gap: 12px;
+ /* Reduce gap for mobile */;
+	}
+
+	.portfolio-meta > div {
+		flex: none;
+ /* Prevents shrinking */
+		width: auto;
+ /* Full width on mobile */;
+	}
+}
+
+#portfolio-intro .sqs-block-code {
+	display: block !important;
+	height: auto !important;
+	width: auto !important;
+}
+
+#portfolio-intro .fe-block {
+	height: fit-content !important;
+}
+
+@media (max-width: 768px) {
+	#portfolio-gallery .gallery-grid-wrapper, #portfolio-gallery-2 .gallery-grid-wrapper {
+		grid-template-columns: auto !important;
+	}
+}
+
+/*** END PORTFOLIO PAGE STYLING ***/
