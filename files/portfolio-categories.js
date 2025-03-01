@@ -11,11 +11,26 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("URL for item:", url); // Log the URL of the item
 
             // Assign categories based on URL patterns
+            
             if (url.includes("the-local-guys-business-show")) { categories.push("podcast", "video"); }
-            if (url.includes("/web-design")) { categories.push("web-design"); }
-            if (url.includes("/branding")) { categories.push("branding"); }
-            if (url.includes("/illustration")) { categories.push("illustration"); }
-            if (url.includes("/graphic-design")) { categories.push("graphic-design"); }
+            if (url.includes("flambouro-philanthropic-society-squarespace-rebuild")) { categories.push("web"); }
+            if (url.includes("studio-omnia")) { categories.push("web"); }
+            if (url.includes("hair-by-rosy-logo-stationery")) { categories.push("design"); }
+            
+            if (url.includes("ortc-clothing-co-email-facebook-ad-design-concept")) { categories.push("design"); }
+            if (url.includes("goldpatch-collection-logo")) { categories.push("design"); }
+            if (url.includes("amazon-prime-video-tv-app-concept")) { categories.push("design"); }
+            if (url.includes("smart-kettle-app-concept")) { categories.push("design"); }
+            
+            if (url.includes("logo-agency-portfolio")) { categories.push("design"); }
+            if (url.includes("web-agency-portfolio")) { categories.push("web"); }
+            if (url.includes("flambouro-philanthropic-society")) { categories.push("web"); }
+            if (url.includes("disability-recreation-sports-sa-wordpress-rebuild")) { categories.push("web"); }
+            
+            if (url.includes("foxden-bb")) { categories.push("web"); }
+            if (url.includes("drssa-bill-buster-lottery-flyer-poster")) { categories.push("design"); }
+            if (url.includes("drssa-wheelchair-footy-promo-video")) { categories.push("video"); }
+            if (url.includes("drssa-donation-emails")) { categories.push("design"); }
 
             console.log("Assigned categories:", categories); // Log the assigned categories
 
