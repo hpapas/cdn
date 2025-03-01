@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (url.includes("foxden-bb")) { categories.push("web"); }
         if (url.includes("drssa-bill-buster-lottery-flyer-poster")) { categories.push("design"); }
         if (url.includes("drssa-wheelchair-footy-promo-video")) { categories.push("video"); }
-        if (url.includes("drssa-donation-emails")) { categories.push("design"); }
+        
 
         console.log("Assigned categories:", categories); // Log the assigned categories
 
@@ -36,6 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
             // Join the categories array into a single string separated by commas
             item.setAttribute("data-category", categories.join(","));
             console.log(`Set data-category="${categories.join(",")}" on link:`, item); // Log when data-category is set
+        }
+    });
+    
+    // Check if any item is missing the data-category attribut
+    document.querySelectorAll("#gridThumbs a.grid-item").forEach(item => {
+        if (!item.hasAttribute("data-category")) {
+            console.log("Item without data-category:", item);
         }
     });
 
