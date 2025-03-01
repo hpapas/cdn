@@ -58,3 +58,31 @@ body:not(.sqs-edit-mode-active) {
 
 /*** END COUNT UP ANIMATION CSS ***/
 
+
+PORTFOLIO FILTER LINKS
+
+.portfolio-filter span {
+	cursor: pointer;
+	padding: 10px;
+	display: inline-block;
+	margin: 5px;
+}
+
+.portfolio-filter span.active {
+	text-decoration: underline;
+}
+
+a.grid-item.hidden {
+	display: none;
+}
+
+.portfolio-filter {
+	padding-left: 5vw;
+	padding-right: 5vw;
+	text-align: center;
+	display: none;
+}
+
+.content .portfolio-filter {
+	display: block;
+}
