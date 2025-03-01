@@ -1,0 +1,60 @@
+/*** TAB STYLES ***/
+
+div.wm-tabs {
+  --tab-button-padding-y: 20px;
+  --tab-button-padding-x: 18px;
+  --tab-button-font-size: 18px;
+  --tab-button-font-weight: inherit;
+  --tab-button-border-radius: 0px;
+  --tab-button-border-width: 0px;
+  --tab-button-border-color: currentColor;
+  --tab-button-background: #fff;
+  --tab-button-color: currentColor;
+
+  /*Hover State*/
+  --tab-button-hover-opacity: 0.6;
+
+  /*Active State*/
+  --tab-button-active-font-weight: inherit;
+  --tab-button-active-border-color: currentColor;
+  --tab-button-active-background: transparent;
+  --tab-button-active-color: ~'hsla(var(--wm-accent-inverse-hsl), 1)';
+
+  /*Active Indicator*/
+  --tab-indicator-display: block;
+  --tab-indicator-track-background: transparent;
+  --tab-indicator-track-height: 100%;
+  --active-indicator-color: ~'hsla(var(--wm-accent-hsl), 1)';
+  --active-indicator-border-radius: 0;
+
+}
+
+.wm-tabs[data-navigation-type=horizontal]>*>.tabs-header {
+  border: none !important;
+}
+
+/*** Full Width Tabs ***/
+
+.wm-tabs[data-navigation-type="horizontal"] {
+  --nav-scrollbar-display: none;
+  --tabs-header-gap: 0px;
+}
+.wm-tabs[data-navigation-type="horizontal"] .tabs-header nav button {
+  flex-grow: 1;
+  flex-basis: ~'calc(100% / var(--tabs-count))';
+}
+
+/*** End Full Width Tabs ***/
+
+/*** END TAB STYLES ***/
+
+/*** COUNT UP ANIMATION CSS ***/
+
+body:not(.sqs-edit-mode-active) {
+  a[href="#wm-countup"] {
+    opacity:0;
+  }
+}
+
+/*** END COUNT UP ANIMATION CSS ***/
+
