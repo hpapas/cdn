@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Document is fully loaded.");
 
     // Loop through all portfolio items and assign categories based on URL patterns
-    document.querySelectorAll("#gridThumbs").forEach(item => {
+    document.querySelectorAll(".grid-item").forEach(item => {
         let link = item.querySelector("a"); // Find the first <a> tag inside the item
 
         if (link) {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let hash = window.location.hash.substring(1); // Get the part of the URL after #
         console.log("Current hash:", hash); // Log the hash value
         
-        // If there's no hash, show all items
+        // If there's no hash or hash is 'all', show all items
         if (!hash || hash === "all") {
             console.log("Showing all items.");
             document.querySelectorAll(".grid-item").forEach(item => {
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let category = link ? link.getAttribute("data-category") : "";
                 console.log("Item category:", category); // Log category of each item
 
+                // Check if the category matches the hash and update display accordingly
                 if (category && category === hash) {
                     item.style.display = "block"; // Show matching items
                     console.log("Showing item:", item); // Log which item is shown
