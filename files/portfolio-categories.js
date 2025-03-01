@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Document is fully loaded.");
 
     // Loop through all portfolio items inside #gridThumbs and assign categories based on URL patterns
-    document.querySelectorAll("#gridThumbs .grid-item").forEach(item => {
+    document.querySelectorAll("#gridThumbs").forEach(item => {
         let link = item.querySelector("a"); // Find the first <a> tag inside the item
 
         if (link) {
