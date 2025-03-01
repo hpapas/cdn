@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // If there's no hash or hash is 'all', show all items
         if (!hash || hash === "all") {
             console.log("Showing all items.");
-            document.querySelectorAll("#gridThumbs).forEach(item => {
+            document.querySelectorAll("#gridThumbs").forEach(item => {
                 item.style.display = "block"; // Show all items
                 console.log("Showing item:", item); // Log which item is shown
             });
