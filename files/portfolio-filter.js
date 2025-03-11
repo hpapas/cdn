@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Assign categories based on URL patterns
         
+        if (url.includes("the-local-guys-2025-product-review-awards-campaign")) { categories.push("video"); }
+        
         if (url.includes("the-local-guys-business-show")) { categories.push("podcast", "video"); }
         if (url.includes("flambouro-philanthropic-society-squarespace-rebuild")) { categories.push("web"); }
         if (url.includes("studio-omnia")) { categories.push("web"); }
